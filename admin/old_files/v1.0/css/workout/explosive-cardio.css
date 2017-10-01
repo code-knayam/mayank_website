@@ -1,0 +1,206 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 928px;
+}
+a, a:hover {
+	text-decoration: none;
+}
+/* Jumbotron */
+.jumbotron {
+	min-height: 650px;
+	background: url('../../images/workout/fat-workout-1/workout-pic.jpg') center center no-repeat;
+	background-size: cover;
+	text-align: center;
+	margin: 0;
+	box-shadow: 1px 1px 5px #111;
+}
+.jumbotron .row {
+	position: relative;
+	top: 100px;
+}
+.jumbotron h3 {
+	font-size: 40px;
+	color: #111;
+	font-weight: 700;
+}
+.jumbotron h3:first-child {
+	font-size: 50px;
+}
+.jumbotron .btn {
+	margin-top: 80px;
+	font-size: 25px;
+	font-weight: 300;
+	cursor: pointer;
+	padding: 5px 15px;
+	background-color: #111;
+	color: #fff;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.jumbotron .btn:hover {
+	padding: 5px 50px;
+	color: rgba(153,0,0,0.9);
+	background-color: #fff;
+	box-shadow: 1px 1px 30px #111;
+}
+
+/* Section */
+.section {
+	min-height: 500px;
+	padding: 10px;
+}
+.section .heading {
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+}
+.section .heading h3 {
+	font-size: 40px;
+}
+.section .content {
+	text-align: justify;
+}
+.section .content h4 {
+	font-size: 20px;
+	font-family: "Open Sans", monospace;
+	font-weight: 700;
+}
+.section .content .bold-reasons {
+	text-align: center;
+}
+.section .content .bold-reasons h4{
+	margin: 100px 0;
+	color: #444;
+	text-shadow: 15px 15px 2px #111;
+	font-size: 25px;
+	font-stretch: extra-expanded;
+}
+
+/* workout menu */
+.workout-menu {
+	height: 350px;
+	padding: 25px 0;
+	width: 100%;
+	margin: 25px 0 25px;
+	overflow: hidden;
+}
+.workout-menu .exercise-container {
+	position: relative;
+	height: 300px;
+}
+.workout-menu #ec-1 {
+	left: 0;
+}
+.workout-menu #ec-2 {
+	top: -300px;
+	left: 100%;
+}
+.workout-menu #ec-3 {
+	top: -600px;
+	left: 200%;
+}
+.workout-menu #ec-4 {
+	top: -900px;
+	left: 300%;
+}
+.workout-menu .exercise-container .exercise {
+	text-align: center;
+	padding: 10px;
+}
+.workout-menu .exercise-container .exercise img {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.workout-menu .exercise-container .exercise a {
+	color: #222;
+	font-size: 20px;
+}
+.workout-menu .exercise-button {
+	position: absolute;
+	height: 300px;
+	width: 7%;
+	color: #fff;
+	padding-top: 120px;
+	font-size: 30px;
+	text-align: center;
+	opacity: 0.3;
+	cursor: pointer;
+	background: #222;
+}
+.workout-menu #previous {
+	left: 0;
+	top: 1120px;
+	float: left;
+}
+.workout-menu #next {
+	right: 0;
+	top: 1120px;
+	float: right;
+}
+.workout-menu .exercise-button:hover {
+	opacity: 0.5;
+}
+
+/* Timer */
+.timer {
+	min-height: 300px;
+	padding: 30px;
+	text-align: center;
+}
+.timer .clock {
+	font-size: 100px;
+}
+.timer #button {
+	margin-top: 60px;
+	font-size: 30px;
+	cursor: pointer;
+}
+.timer #button a {
+	background-color: #111;
+	padding: 10px 40px;
+	color: #fff;
+        -webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.timer #button a:hover{
+	color: rgba(100,100,200,0.9);
+	background: #fff;
+	box-shadow: 1px 1px 10px #111;
+}
+
+/* facebook like and comments */
+.facebook-like, .facebook-comment {
+
+	margin: 30px 0;
+	text-align: center;
+
+}
+
+/*media queries */
+@media (max-width: 928px) {
+	.workout-menu {
+		min-height: 950px;
+	}
+	.workout-menu .exercise-button {
+		height: 900px;
+		padding-top: 430px;
+	}
+	.workout-menu #previous {
+		top: 1520px;
+		z-index: 10;
+	}
+	.workout-menu #next {
+		top: 1520px;
+		z-index: 10;
+	}
+
+}

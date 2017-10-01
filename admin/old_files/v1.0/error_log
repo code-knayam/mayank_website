@@ -1,0 +1,1 @@
+[26-Oct-2016 16:56:58] PHP Warning:  getimagesize() [<a href='function.getimagesize'>function.getimagesize</a>]: Filename cannot be empty in /home/mayanbkt/public_html/file/upload.php on line 8

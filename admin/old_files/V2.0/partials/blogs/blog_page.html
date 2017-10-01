@@ -1,0 +1,43 @@
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <h3 class="heading">Blogs</h3>
+
+      <!-- Blogs -->
+      <div class="col-md-8">
+
+        <!-- Blog Month -->
+        <div class="blog_month" ng-repeat="month_detail in months_details" id="blog_{{month_detail.month}}">
+          <h4 class="sub_heading">{{month_detail.month}} &nbsp;&nbsp;<i class="fa fa-angle-right"></i></h4>
+
+          <!-- Individual blogs -->
+          <div class="blog" ng-repeat="blog in month_detail.blog_container" ng-click="changeBlog(blog.blog_path)">
+            <div class="col-md-2">
+              <span class="logo"><i class="fa fa-quote-left"></i></span>
+            </div>
+            <div class="col-md-10">
+              <h3 class="title">{{blog.blog_title}}</h3>
+              <p class="date">
+                <span class="separator">-</span>
+                {{blog.blog_date}}
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Blogs navigation -->
+      <div class="col-md-4">
+        <div class="navigation">
+          <ul class="nav_list">
+            <li class="nav_item" ng-repeat="month_detail in months_details" ng-click="bringToTop(month_detail.month)" >
+              <a>- {{month_detail.month}} , {{year}}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

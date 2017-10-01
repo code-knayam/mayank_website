@@ -1,0 +1,74 @@
+[14-Jul-2016 17:08:05] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 37
+[14-Jul-2016 17:08:05] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 48
+[14-Jul-2016 17:08:24] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:08:24] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 33
+[14-Jul-2016 17:08:24] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 35
+[14-Jul-2016 17:12:23] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:12:36] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:12:46] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:13:21] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:14:05] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 113
+[14-Jul-2016 17:20:22] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[14-Jul-2016 17:21:03] PHP Notice:  Undefined variable: date in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 14
+[24-Jul-2016 12:00:02] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 12:00:13] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 12:00:18] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 12:29:26] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 12:29:43] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 12:30:02] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[24-Jul-2016 13:00:40] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[26-Jul-2016 04:44:46] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[26-Jul-2016 05:23:15] PHP Warning:  mysqli_connect() [<a href='function.mysqli-connect'>function.mysqli-connect</a>]: (28000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 114
+[29-Jul-2016 09:21:51] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 32
+[29-Jul-2016 09:21:51] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/check_workout_date.php on line 34
+[29-Jul-2016 09:21:53] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 37
+[29-Jul-2016 09:21:53] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 48
+[29-Jul-2016 09:22:00] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 37
+[29-Jul-2016 09:22:00] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 48
+[29-Jul-2016 09:22:12] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 37
+[29-Jul-2016 09:22:12] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 48
+[02-Aug-2016 15:46:34] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/sign_up.php on line 61
+[02-Aug-2016 15:46:34] PHP Parse error:  syntax error, unexpected T_STRING in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 55
+[02-Aug-2016 16:21:33] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/sign_up.php on line 61
+[02-Aug-2016 16:21:33] PHP Parse error:  syntax error, unexpected T_STRING in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 55
+[02-Aug-2016 16:21:33] PHP Parse error:  syntax error, unexpected T_STRING in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 55
+[02-Aug-2016 16:28:44] PHP Notice:  Undefined index:  username in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:28:44] PHP Notice:  Undefined index:  username in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:32:19] PHP Notice:  Undefined index:  username in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:33:10] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 21
+[02-Aug-2016 16:33:10] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:33:10] PHP Notice:  Undefined index:  email in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:33:10] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:33:10] PHP Notice:  Undefined index:  password in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 21
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  email in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 50
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  email in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:39:12] PHP Notice:  Undefined index:  password in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 21
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  email in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 50
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  email in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  name in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[02-Aug-2016 16:41:48] PHP Notice:  Undefined index:  password in /home/mayanbkt/public_html/gymAlog/php/createDataTable.php on line 52
+[03-Aug-2016 07:29:15] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[03-Aug-2016 07:29:15] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:01:29] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 35
+[04-Aug-2016 17:01:29] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[04-Aug-2016 17:01:29] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:01:49] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 35
+[04-Aug-2016 17:01:49] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[04-Aug-2016 17:01:49] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:01:49] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 35
+[04-Aug-2016 17:01:49] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[04-Aug-2016 17:01:49] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:03:47] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 35
+[04-Aug-2016 17:03:47] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[04-Aug-2016 17:03:47] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:03:55] PHP Notice:  Undefined index:  userID in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 35
+[04-Aug-2016 17:03:55] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 43
+[04-Aug-2016 17:03:55] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/mayanbkt/public_html/gymAlog/php/view_workout.php on line 54
+[04-Aug-2016 17:15:01] PHP Notice:  Undefined variable: email in /home/mayanbkt/public_html/gymAlog/php/emailCheck.php on line 15
+[12-Oct-2016 17:36:07] PHP Notice:  Undefined variable: email in /home/mayanbkt/public_html/gymAlog/php/emailCheck.php on line 15
+[23-Mar-2017 06:37:37] PHP Notice:  Undefined variable: email in /home/mayanbkt/public_html/gymAlog/php/emailCheck.php on line 15

@@ -1,0 +1,368 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 928px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* Menu */
+.menu-bar {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: #111;
+	top: 0;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	box-shadow: 0 0 10px #111;
+	z-index: 9999;
+}
+.menu-bar #logo {
+	font-size: 30px;
+	color: #fff;
+	margin: 5px 0;
+	font-family: monospace;
+}
+.menu-bar #menu_toggle_btn {
+	position: absolute;
+	float: right;
+	top: 0;
+	right: 5px;
+	color: #fff;
+	font-size: 25px;
+	margin: 15px;
+	cursor: pointer;
+}
+.side-bar {
+	position: fixed;
+	float: right;
+	width: 240px;
+	top: 50px;
+	right: -250px;
+	height: 100%;
+	background: #888;
+	z-index: 9999;
+	text-align: right;
+	box-shadow: -3px 0 10px #111;
+	transition: .5s ease-in-out;
+}
+.side-bar ul {
+	padding: 0;
+}
+.side-bar .side_bar_menu_btn {
+	border-bottom: 1px solid #444;
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	padding: 20px 15px;
+	transition: .5s ease-in-out;
+}
+.side-bar .side_bar_menu_btn:hover {
+	background: #3f51b5;
+	padding-right: 30px;
+}
+.side-bar .side_bar_menu_btn a {
+	font-size: 16px;
+	padding: 10px;
+	margin: 0;
+	color: #fff;
+	font-weight: 200;
+	width: 100% auto;
+	height: 60px;
+}
+
+/* SLIDER MENU */
+.slider-menu {
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	top: 50px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	z-index: 9990;
+	color: #111;
+	border-bottom: 1px solid #111;
+
+}
+.slider-menu .slider-menu-element {
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	margin: 0;
+}
+.slider-menu .slider-menu-element li {
+	width: 33.33%;
+	height: 100%;
+	height: 50px;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	font-size: 18px;
+	font-family: monospace;
+	border-right: 1px solid #3f51b5;
+	border-left: 1px solid #3f51b5;
+	transition: .5s ease-in-out;
+}
+.slider-menu .slider-menu-element .slider-menu-tab button {
+	height: 50px;
+}
+.slider-menu .slider-menu-element .active_tab {
+	box-shadow: 0 0 10px #111;
+	background: #3f51b5;
+}
+
+/* INDIVIDUAL SLIDE */
+.slide-container {
+	width: 100%;
+	position: relative;
+}
+.slide {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	transition: 1s ease-in-out;
+	top: 0;
+
+	display: none;
+}
+.active_slide {
+	display: block;
+	right: 0;
+}
+
+/* Jumbotron */
+.jumbotron {
+	min-height: 600px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+  padding-top: 120px;
+  color: #111;
+}
+
+#add-workout {
+	background: url('add-workout-back.jpg') no-repeat center center;
+	background-color: #fff;
+}
+#view-workout {
+	background: url('view-workout-back.jpg') no-repeat center center;
+	background-color: #fff;
+}
+#blog-workout {
+	background: url('view-workout-back.jpg') no-repeat center center;
+	background-color: #fff;
+}
+
+
+/*jumbotron form */
+
+.jumbotron form {
+	text-align: left;
+	padding: 10px 20px;
+	overflow: hidden;
+}
+.jumbotron .form-control  {
+	padding: 5px 5px 0;
+	color: #111;
+	width: 70%;
+	background: transparent;
+	font-size: 18px;
+	border: none;
+	border-bottom: 1px solid #111;
+	border-radius: 1px;
+	box-shadow: none;
+}
+.jumbotron  .inputBlock {
+	position: relative;
+	margin: 25px 0 25px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/* animating the label
+and creating a floating effect when in focus */
+.jumbotron  .inputBlock label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	width: 100%;
+	cursor: text;
+	font-weight: 400;
+	padding: 5px 5px 0;
+	color: #111;
+}
+
+.jumbotron  .inputBlock .form-control:focus + label
+,.jumbotron  .inputBlock .form-control:valid + label {
+	margin-top: -25px;
+	padding-left: 1px;
+	font-size: 14px;
+	font-weight: 500;
+	color: rgba(100,121,241,0.9);
+}
+
+
+.jumbotron .add_btn {
+	top: 0;
+	font-size: 14px;
+	border-radius: 0px;
+	padding: 5px 10px;
+	background-color: rgba(100,120,200,0.6);
+	cursor: pointer;
+	box-shadow: 0 0 2px #111;
+	transition: .5s ease-in-out;
+}
+.jumbotron .add_btn:hover {
+	box-shadow: 0 0 10px #111;
+}
+.jumbotron .newSetBtn, .jumbotron .removeSetBtn {
+	float: right;
+	margin-right: 25px;
+}
+.jumbotron .newSetBtn:hover, .jumbotron .removeSetBtn:hover {
+	transform: rotateZ(180deg);
+}
+.jumbotron .newExerciseBtn {
+	float: left;
+}
+.jumbotron .muscle-block {
+	border-bottom: 3px solid #111;
+	margin-bottom: 0px;
+}
+.jumbotron .exercise-block {
+	margin-bottom: 30px;
+}
+.jumbotron .exercise-block> .row {
+	border-bottom: 2px solid #333;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.jumbotron .submit-block {
+	text-align: center;
+	font-size: 19px;
+	cursor: pointer;
+	padding-top: 50px;
+}
+.jumbotron .submit-block a {
+	color: #fff;
+	padding: 10px 20px;
+	font-weight: 200;
+	background-color: #3f51b5;
+	transition: .5s ease-in-out;
+}
+.jumbotron .submit-block a:hover {
+	background-color: #222;
+	padding: 10px 30px;
+	box-shadow: 0 0 20px #111;
+}
+.jumbotron .submit-block #add_more_workout_btn {
+	display: none;
+}
+.error {
+	color: rgba(300,10,10,1);
+	font-size: 12px;
+	padding: 3px 0;
+}
+/* JUMBOTRON ENDS */
+
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+/* VIEW SECTION BEGINS */
+#view-workout .view_workout_container {
+	margin: 10px 25px 40px;
+}
+#view-workout .view_workout_container .individual_workout  {
+	position: relative;
+	font-size: 16px;
+	min-height: 100px;
+	line-height: 20px;
+	padding: 40px 10px;
+	margin: 15px 40px;
+	border-bottom: 2px solid #111;
+	transition: .5s ease-in-out;
+	right: 0;
+}
+#view-workout .view_workout_container .individual_workout .more_detail_btn {
+	cursor: pointer;
+}
+#view-workout .view_workout_container .individual_workout .delete_workout_btn {
+	cursor: pointer;
+	font-size: 18px;
+	padding: 7px 5px;
+	background: #777;
+	color: #fff;
+	transition: 1s ease-in-out;
+	right: -100%;
+}
+#view-workout .view_workout_container .individual_workout .delete_workout_btn:hover {
+	box-shadow: 0 0 10px #111;
+}
+#view-workout .view_workout_container .individual_workout .workout_detail {
+	margin: 20px 40px;
+	border-top: 1px solid #777;
+	display: none;
+}
+#view-workout .view_workout_container .individual_workout .workout_detail .workout_detail_content .row {
+	margin-top: 8px;
+}
+
+/* Load More Workout Button */
+#view-workout .load_more_btn {
+	margin: 50px;
+	text-align: center;
+	display: none;
+}
+#view-workout .load_more_btn a {
+	font-size: 18px;
+	padding: 5px 20px;
+	color: #111;
+	background: #fff;
+	cursor: pointer;
+}
+
+
+/* blogs */
+#blog-workout a {
+        color: #111;
+}
+#blog-workout .work {
+	color: #111;
+        margin: 10px 20px;
+        transition: .5s ease-in-out;
+}
+#blog-workout .work:hover {
+	box-shadow: 0 0 20px #111;
+	opacity: 1;
+}
+#blog-workout .work img {
+	height: 200px;
+	width: 100%;
+}
+#blog-workout .work h2 {
+	font-size: 30px;
+	padding: 10px 8px 10px;
+}
+#blog-workout .work p {
+	font-size: 15px;
+	padding: 10px 8px 10px;
+}
+

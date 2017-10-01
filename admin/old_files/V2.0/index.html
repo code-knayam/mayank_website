@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <!-- META DATA -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Profile of Mayank Jain">
+    <meta name="keywords" content="mayank jain, simply_mayankk, mayankjain1394@gmail.com, contact mayank jain, HTML, CSS, JavaScript, VSEC, DAMS, Kanpur, freelancer, bootstrap, php, jQuery, mayank jain info, personal website">
+    <meta name="author" content="Mayank Jain">
+    <meta name="robots" content="index follow">
+    <meta name="revisit-after" content="2 days">
+    <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
+
+    <!-- JS links -->
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+
+    <!-- Importing CV -->
+    <script src="cv.js"></script>
+
+    <!-- Importing Files for angular -->
+    <script src="js/modules/module.js"></script>
+    <script src="js/directives/mainDirectives.js"></script>
+    <script src="js/controller/contactFormCtrl.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jQuery/progressBar.js"></script>
+    <script src="js/jQuery/main.js"></script>
+    <script src="js/jQuery/jumbotron.js"></script>
+    <script src="js/jQuery/navigation.js"></script>
+    <script src="js/jQuery/menu.js"></script>
+    <script src="js/jQuery/works.js"></script>
+    <script src="js/jQuery/projects.js"></script>
+    <script src="js/jQuery/aboutMe.js"></script>
+    <script src="js/contact_form.js"></script>
+
+    <!-- CSS links -->
+    <!-- bootstrap -->
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Gogle fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/progressBar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jumbotron.css" />
+    <link rel="stylesheet" href="css/works.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/aboutMe.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/contact_form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+
+
+    <title>Mayank Jain</title>
+	  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "WebSite",
+        "name" : "Mayank Jain",
+        "alternateName" : "MJ",
+        "url" : "http://www.mayankjain.me"
+      }
+    </script>
+
+  </head>
+
+  <body ng-app="myApp">
+
+    <!-- Progress Bar -->
+    <div class='progress' id="progress_div">
+        <div class='bar' id='bar1'></div>
+        <div class='percent' id='percent1'></div>
+      </div>
+    <input type="hidden" id="progress_width" value="0">
+
+    <!-- Menu -->
+    <div menu-directive></div>
+
+    <!-- Jumbotron -->
+    <div jumbotron-directive></div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="row">
+          <h1>Works</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Works -->
+    <div works-directive></div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="row">
+          <h1>Projects</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div projects-directive></div>
+
+    <!-- Navigation -->
+    <div navigation-directive></div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="row">
+          <h1>About Me</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div about-me-directive></div>
+
+    <div class="supporting">
+      <div class="container">
+        <div class="row">
+          <h1>Contact Me</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div contact-directive></div>
+
+    <!-- Footer -->
+    <div footer-directive></div>    
+  </body>
+
+</html>

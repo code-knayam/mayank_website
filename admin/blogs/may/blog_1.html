@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <!-- META DATA -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Add space tile on Mac Dock">
+    <meta name="keywords" content="blog, code-knayam, mac, space tile, mac dock ,mayank jain, simply_mayankk, mayankjain1394@gmail.com, contact mayank jain, HTML, CSS, JavaScript, VSEC, DAMS, Kanpur, freelancer, bootstrap, php, jQuery, mayank jain info, personal website">
+    <meta name="author" content="Mayank Jain">
+    <meta name="robots" content="index follow">
+    <meta name="revisit-after" content="2 days">
+    <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
+
+    <!-- JS links -->
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!-- Importing Files for angular -->
+    <script src="../../js/blogs/blogs_details.js"></script>
+    <script src="../../js/modules/module.js"></script>
+    <script src="../../js/directives/blogDirectives.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="../../js/jQuery/blogs/index.js"></script>
+
+    <!-- CSS links -->
+    <!-- bootstrap -->
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Gogle fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link href="../../css/blogs/main.css" rel="stylesheet">
+    <link href="../../css/blogs/blogs_content.css" rel="stylesheet">
+    <link href="../../css/footer.css" rel="stylesheet">
+    <link href="../../css/index.css" rel="stylesheet">
+
+
+    <title>Code-knayam Blogs</title>
+	  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "WebSite",
+        "name" : "Mayank Jain",
+        "alternateName" : "MJ",
+        "url" : "http://www.mayankjain.me"
+      }
+    </script> -->
+
+  </head>
+
+  <body ng-app="myBlogs">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div menu-directive></div>
+<div class="menu">
+  <div class="menu_logo">
+    <a id="logo" href="http://www.mayankjain.me"><img src="../../favicon.ico" /></a>
+  </div>
+  <div class="menu_bar_container">
+    <a class="menu_item" href="../">BLOGS</a>
+  </div>
+</div>
+
+
+
+<div class="jumbotron" style="background: url('../../images/blog_1_1.png') no-repeat center center ; background-size: cover">
+  <h3>Adding Extra Space on Dock in Mac</h3>
+</div>
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <h3 class="heading">Why is it Usueful ?</h3>
+      <p>
+        When it comes to keeping many apps on the Dock , it might get a bit clustered for the icons to be visible easily.<br />Here this technique may be handy if you like to keep your things organized, just like me.<br /><br />
+        All it requires it a little bit of command writing on terminal.
+      </p>
+        <ul>
+          <li>
+            <p>
+              Open the terminal -
+              Press <kbd>command + space</kbd>
+            </p>
+          </li>
+          <li>
+            <p>
+              Type in <code>terminal</code> and press <kbd>return</kbd>. Terminal window would open.<br />
+            </p>
+          </li>
+          <li>
+            <p>
+              Now type in the following lines.<br />
+              <code>
+                defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+              </code>
+              <br />
+              Press <kbd>return</kbd>.
+              <br />
+              <code>
+                killall Dock
+              </code>
+              <br />
+              Press <kbd>return</kbd>.
+              <br />
+            </p>
+          </li>
+        </ul>
+        <p>
+          Voila, you would see an extra space tile just where the icons end on dock.
+        </p>
+        <img src="../../images/blog_1_2.png" />
+        <p>
+          Now you can rearrange it just like other icons, by dragging it over to its new place.
+          <br /><br />
+          To remove it, you just need to drag it out of the dock and it would be removed from the dock.
+        </p>
+        <p>
+          Using this way you can keep your dock organized.<br />
+          Just like I have done. Grouping the icons of different categories into different group.
+        </p>
+        <img src="../../images/blog_1_1.png" />
+        <blockquote class="blockquote-reverse">
+          <footer>
+            Hope you liked it and found it useful.
+            <br />
+            Follow to get more blogs like this.
+            <br />
+            Would love to hear from you people be it for suggestions , corrections or just chat.
+            <br />
+            Mayank Jain
+          </footer>
+        </blockquote>
+    </div>
+    <div class="row" id="facebook_plugins">
+      <div class="fb-like" data-href="http://mayankjain.me/blogs/#/addExtraSpaceOnDock" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <br />
+    <!-- </div>
+    <div class="row facebook_plugins"> -->
+      <div class="fb-comments" data-href="http://www.mayankjain.me/blogs/#/addExtraSpaceOnDock" data-numposts="5"></div>
+    </div>
+  </div>
+</div>
+
+    <div footer-directive></div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="left_content">
+              &copy;
+              <span id="date">2017</span>
+              &nbsp;| &nbsp;
+              <a class="link" href="http://www.mayankjain.me">Mayank Jain</a>
+            </span>
+          </div>
+          <div class="col-md-4">
+            <a class="link" target="_blank" href="http://www.mayankjain.me/resume.pdf">Download Resume</a>
+          </div>
+          <div class="col-md-4">
+            <ul class="social_links">
+              <li class="social_icon"><a href="https://www.facebook.com/EveryDayIsCodeDay/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li class="social_icon"><a href="http://in.linkedin.com/in/mayankjain1394" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li class="social_icon"><a href="mailto:mayankjain1394@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              <li class="social_icon"><a href="http://instagram.com/mayank_jain_1394" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li class="social_icon"><a href="https://github.com/code-knayam" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li class="social_icon"><a href="tel:+918004520990" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="blog_spinner">
+      <i class="fa fa-spinner fa-spin"></i>
+    </div>
+
+  </body>
+
+</html>

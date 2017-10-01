@@ -1,0 +1,62 @@
+/* Jumbotron */
+.jumbotron {
+  height: 650px;
+  width: 100%;
+  background-color: #222;
+  background: url('../images/jumbotronBackground.jpg') center center no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.jumbotron .content {
+  height: 90%;
+  position: relative;
+  top: 90px;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+}
+.jumbotron .content h3 {
+  font-family: 'Barrio', monospace;
+  font-size: 50px;
+  color: rgba(253,153,255,1);
+}
+.jumbotron .content h3 #hello {
+  color: rgba(255,178,102,1);
+  font-size: 60px;
+}
+.jumbotron .content h3 #name {
+  color: rgba(255,251,104,1);
+  font-size: 70px;
+}
+.jumbotron .content h3 #location {
+  color: rgba(153,251,154,1);
+  font-size: 60px;
+}
+
+.jumbotron .arrow {
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+}
+.jumbotron i {
+  position: relative;
+  top: -20px;
+  opacity: 0;
+}
+
+@media (max-width: 995px) {
+  .jumbotron .content h3 {
+    font-size: 40px;
+  }
+  .jumbotron .content h3 #hello {
+    font-size: 50px;
+  }
+  .jumbotron .content h3 #name {
+    font-size: 50px;
+  }
+  .jumbotron .content h3 #location {
+    font-size: 50px;
+  }
+}

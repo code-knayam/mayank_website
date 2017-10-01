@@ -1,0 +1,50 @@
+  <!-- form starts -->
+<form role="form">
+
+  <div  class="form-group">
+    <div class="row">
+      <div class="col-md-6 inputBlock">
+        <input type="text" class="form-control" ng-model="form_name" ng-blur="checkName()" id="Name" autocomplete="off" required>
+        <label for="Name">Name</label>
+        <span class="error" ng-bind="form_nameErr"></span>
+      </div>
+    </div>
+  </div>
+
+  <div  class="form-group">
+    <div class="row">
+      <div class="col-md-6 inputBlock">
+        <input type="text" class="form-control" ng-model="form_email" ng-blur="checkEmail()" id="email" autocomplete="off"  required/>
+        <label for="email" id="emailLabel">E-mail</label>
+        <span class="error" ng-bind="form_emailErr"></span>
+      </div>
+      <div class="col-md-6 inputBlock">
+        <input type="tel" class="form-control" ng-model="form_contact" ng-blur="checkContact()" id="contactNumber"  autocomplete="off"  required>
+        <label for="contactNumber">Contact Number</label>
+        <span class="error" ng-bind="form_contactErr"></span>
+      </div>
+    </div>
+  </div>
+
+  <div  class="form-group">
+    <div class="row">
+      <div class="col-md-8 inputBlock">
+        <textarea class="form-control" ng-model="message" id="message" rows="4" autocomplete="off" required></textarea>
+        <label for="message" id="message-label">Your Message</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Button for form -->
+  <div class="form-group">
+    <div class="row">
+      <div class="col-md-12 submitBlock" >
+        <a class="btn" id="submit_btn" ng-click="sendData()">Send</a>
+      </div>
+    </div>
+  </div>
+
+</form>
+<div  class="message">
+  <h3></h3>
+</div>

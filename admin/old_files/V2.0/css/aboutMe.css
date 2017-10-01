@@ -1,0 +1,67 @@
+.about_me {
+  width: 100%;
+  height: 600px;
+  padding: 0;
+  margin: 0;
+}
+.about_me #part_1 {
+  height: inherit;
+  background-color: #333;
+  left: -100%;
+}
+.about_me #part_2 {
+  height: inherit;
+  top: 100%;
+  background: url('../images/aboutMeImage.jpg') center center no-repeat ;
+  background-size: cover;
+  z-index: -1;
+  padding: 0;
+  border-left: 5px solid #112;
+  border-right: 5px solid #112;
+}
+.about_me #part_3 {
+  height: inherit;
+  background-color: #fff;
+  left: 100%;
+}
+.about_me .content {
+  width: 100%;
+  margin-top: 100px;
+  opacity: 0;
+  padding: 0;
+  color: #000000;
+  text-align: center;
+}
+.about_me .content h3{
+  padding-top: 40px;
+  font-size: 30px;
+  color: #ddd;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+.about_me .content  p{
+  padding-top: 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #bbb;
+  font-family: sans-serif;
+}
+.about_me #svgCont .small_circle {
+  transition: 1s ease-in;
+  cursor: pointer;
+}
+.about_me #svgCont .skill_text {
+  transition: 1s ease-in-out;
+  display: none;
+}
+
+
+/* Media Queries */
+@media (max-width: 995px) {
+  .about_me #part_2 {
+    display: none;
+  }
+  .about_me #part_3 {
+    display: none;
+  }
+}

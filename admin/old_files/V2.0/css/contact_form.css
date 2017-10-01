@@ -1,0 +1,104 @@
+/* form */
+.contact form {
+	text-align: left;
+	padding: 2px 20px;
+	overflow: hidden;		
+}
+.contact .form-control  {
+	padding: 5px 5px 0;
+	color: #111;
+	width: 100%;
+	background: transparent;
+	font-size: 18px;
+	border: none;
+	border-bottom: 1px solid #111;
+	border-radius: 1px;
+	box-shadow: none;
+}
+.contact  .inputBlock {
+	position: relative;
+	margin: 25px 0 25px;
+	font-size: 14px;
+  font-weight: 400;
+}
+
+/* animating the label
+and creating a floating effect when in focus */
+.contact  .inputBlock label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+	width: 100%;
+	cursor: text;
+	padding: 5px 5px 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.contact  .inputBlock .form-control:focus + label
+,.contact  .inputBlock .form-control:valid + label , .set-label {
+	margin-top: -25px;
+	font-size: 14px;
+	color: rgba(55, 203, 51, 1);
+	padding-left: 0;
+	margin-left: 0;
+}
+.contact  .inputBlock .error {
+	position: absolute;
+	color: #a35c22;
+	padding-top: 5px;
+}
+textarea {
+  resize: none;
+}
+
+
+/* submit button properties */
+.contact  .submitBlock {
+	margin: 5px 0 0;
+	text-align: center;
+}
+.contact  #submit_btn {
+	background: #333;
+	font-style: italic;
+	color: #aaa;
+	font-size: 15px;
+	padding: 10px 15px;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.contact #submit_btn:hover {
+	box-shadow: 0 0 1px #222;
+	background: rgba(55, 203, 51, 1);
+  color: #000000;
+  padding: 10px 35px;
+}
+.contact .message {
+  display: none;
+  width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+  padding: 10px ;
+  text-align: center;
+	transform: rotateY(90deg);
+}
+.contact .message h3 {
+  font-family: cursive;
+  color: #222;
+}
+
+
+/* Media Queries */
+@media (max-width: 995px) {
+  .contact  .inputBlock {
+		margin-top: 45px;
+		margin-bottom: 0;
+	}
+}

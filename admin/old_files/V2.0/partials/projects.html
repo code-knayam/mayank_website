@@ -1,0 +1,41 @@
+<div class="projects">
+
+
+
+  <div  class = "project_container" ng-repeat = "project in projects">
+
+    <!-- Individual Project starts -->
+    <div class="col-md-4 project_content">
+
+        <div class="header">
+          <div class="nav_arrow previousProject">
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <div class="heading">
+            <h3>{{project.title}}</h3>
+          </div>
+          <div class="nav_arrow nextProject">
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="about">
+          <h4 class="project_content_title">Description : </h4>
+          <p>
+            {{project.description}}
+          </p>
+        </div>
+        <div class="tags">
+          <h4 class="project_content_title">Tags : </h4>
+          <p ng-repeat = "tag in project.tags">{{'#' + tag}}</p>
+        </div>
+        <div class="link">
+          <a class="btn" target="_blank" ng-href="{{project.link}}">{{project.linkName}}</a>
+        </div>
+
+    </div>
+    <div class="col-md-8 project_frame">
+      <img class="frame_image" ng-src="{{project.imageHref}}"/>
+    </div>
+    <!-- Individual Project ends -->
+  </div>
+</div>

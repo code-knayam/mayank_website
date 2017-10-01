@@ -1,0 +1,164 @@
+/*menu*/
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+  padding: 10px 12px;
+  background: #111;
+}
+.menu a {
+	color: #fff;
+}
+
+/* Index page link */
+.name  {
+	text-align: left;
+	float: left;
+}
+.name img {
+        width:20px;
+        height:20px;
+}
+.name a:hover {
+	color: #f6f;
+	padding: 15px;
+	text-decoration: none;
+	-webkit-transition: padding 1s, color 1s;
+	-moz-transition: padding 1s, color 1s;
+	-o-transition: padding 1s, color 1s;
+	transition: padding 1s, color 1s;
+}
+
+/* Toggle side menu button */
+.menu-button {
+  position: relative;
+	text-align: left;
+	float: right;
+	right: 20px;
+  color: #fff;
+  font-size: 20px;
+  z-index: 9999;
+  text-shadow: 0 0 5px #111;
+  cursor: pointer;
+}
+
+/* Menu slider buttons */
+.menu-nav-button {
+  position: relative;
+  float: right;
+  color: #ddd;
+  display: none;
+  font-size: 22px;
+  z-index: 9999;
+  cursor: pointer;
+  text-shadow: 0 0 25px #111;
+}
+
+.menu-nav-button:hover {
+  text-shadow: 0 0 30px #111;
+  transition: text-shadow .5s;
+  -webkit-transition: text-shadow .5s;
+  -moz-transition: text-shadow .5s;
+  -o-transition: text-shadow .5s;}
+#next {
+  right: 0;
+  top: 340px;
+}
+#previous {
+  right: 340px;
+  top: 0;
+}
+
+/* side Menu */
+.quarter-circle {
+  position: relative;
+  float: right;
+  right: -800px;
+  top: -800px;
+  width: 800px;
+  height: 800px;
+  border-radius: 800px;
+  box-shadow: 1px 1px 20px #111, 2px 2px 5px #444;
+}
+
+.quarter-circle .quad {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+
+}
+.quarter-circle #first-quad {
+  left: 0;
+  top: 0;
+  transform: rotateZ(-270deg);
+}
+.quarter-circle #second-quad {
+  left: 50%;
+  top: -50%;
+  transform: rotateZ(-180deg);
+}
+.quarter-circle #third-quad {
+  left: 0;
+  top: -50%;
+  transform: rotateZ(0deg);
+}
+.quarter-circle #fourth-quad {
+  left: 50%;
+  top: -100%;
+  transform: rotateZ(-90deg);
+}
+.quad .menu-heading {
+  margin-top: -10px;
+}
+.quad .menu-heading h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #222;
+  font-family: 'Shadows Into Light', cursive;
+}
+.quad .menu-content {
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.quad .menu-content a {
+  cursor: pointer;
+  color: #444;
+  font-size: 25px;
+  transition: .5s ease-in-out;
+  border-bottom: 1px solid #222;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.quad .menu-content a:hover {
+  color: #111;
+  font-size: 28px;
+  transition: color .5s, font-size .5s;
+}
+
+.quad .social-plugins {
+  list-style: none;
+}
+.quad .social-plugins li {
+  padding: 0 10px 5px;
+}
+/* media queries */
+@media (max-width: 879px){
+  .quarter-circle .menu-content {
+    margin: 0 15px;
+  }
+  .quad .social-plugins li {
+    padding: 0 50px 5px;
+  }
+  #previous {
+    right: 280px ;
+  }
+  
+}

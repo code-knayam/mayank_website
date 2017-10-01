@@ -1,0 +1,280 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 928px;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* MENU BAR */
+.menu_bar {
+	position: fixed;
+	width: 100%;
+	margin: 0;
+	z-index: 9999;
+	height: 60px;
+	padding: 0;
+	background: rgba(10,10,10,0.8);
+}
+.menu_bar .logo {
+	font-weight: 300;
+	font-family: monospace;
+	float: left;
+}
+.menu_bar .logo h3 {
+	color: #fff;
+	margin: 10px 10px;
+	line-height: 40px;
+}
+.menu_bar .sign_in_form {
+	float: right;
+	margin-right: 25px;
+}
+.menu_bar .sign_in_form .inputBlock input {
+	border-radius: 0;
+	border: none;
+	margin: 10px 0 ;
+	height: 40px;
+	padding-right: 30px;
+}
+.menu_bar .sign_in_form .inputBlock #sign_in_btn {
+	background-color: #999;
+	color: #fff;
+	font-size: 15px;
+	transition: .2s ease-in-out;
+	font-weight: 300;
+	padding: 5px 8px;
+}
+.menu_bar .sign_in_form .inputBlock #sign_in_btn:hover {
+	background-color: #888;
+}
+
+.menu_bar .sign_in_form .inputBlock .show_password {
+	position: absolute;
+	padding: 22px 25px ;
+	right: 0;
+	font-size: 15px;
+}
+
+
+
+/* Jumbotron */
+.jumbotron {
+	min-height: 500px;
+	background: url('../jumbo-back3.jpg') no-repeat center center;
+	background-color: rgb(233,234,234);
+	background-size: cover;
+	margin: 0;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.jumbotron .heading {
+	font-weight: 200;
+	font-family: monospace;
+	height: 120px;
+	margin-bottom: 20px ;
+}
+.jumbotron .heading h3 {
+	font-size: 50px;
+	color: #fff;
+}
+
+.jumbotron .content {
+	background-color: rgba(11,11,11,0.4);
+	padding: 10px 20px;
+}
+
+/* Information about system */
+.jumbotron .content .information {
+	margin: 20px 0 80px;
+	min-height: 450px;
+	display: block;
+}
+.jumbotron .content .information h3 {
+	color: #fff;
+	padding-top: 0;
+	margin-top: 0;
+	font-weight: 300;
+	font-size: 26px;
+	font-family: sans-serif;
+}
+.jumbotron .content .information .slide {
+	min-height: 150px;
+	position: absolute;
+	margin: 30px 0 0;
+	left: 0;
+	display: none;
+	width: 100%;
+}
+.jumbotron .content .information .active_info {
+	display: block;
+}
+.jumbotron .content .information .slide .slide_image {
+	width: 100%;
+	height: 200px;
+	font-size: 100px;
+	margin: 10px 20px 0px ;
+	padding: 75px 50px;
+	color: #fff;
+	text-align: center;
+	text-shadow:  0 0 30px #aaa;
+}
+.jumbotron .content .information .slide p {
+	min-height: 200px;
+	color: #ddd;
+	font-size: 19px;
+	font-weight: 200;
+	margin: 30px 30px 0px;
+	padding-top: 40px;
+}
+
+.jumbotron .content .information .slide_bullet {
+	position:relative;
+	top: 320px;
+	text-align: center;
+	color: #fff;
+}
+
+
+/* Sign Up Form elements */
+
+.jumbotron .content .sign_up_form  {
+	margin-top: 40px;
+	min-height: 400px;
+}
+.jumbotron .content .sign_up_form .sign_up_heading {
+	color: #888;
+	font-size: 19px;
+}
+.jumbotron .content .sign_up_form .inputBlock {
+	margin: 5px 0 10px;
+}
+.jumbotron .content .sign_up_form input {
+	border-radius: 0;
+	margin: 0;
+	font-size: 15px;
+	height: 45px;
+	border: none;
+	font-weight: 200;
+	width: 100%;
+}
+.jumbotron .content .sign_up_form .inputBlock input {
+	border: 1px solid #888;
+	border-bottom: none;
+	padding-right: 40px;
+}
+.jumbotron .content .sign_up_form .inputBlock input:focus {
+	box-shadow: none;
+}
+.jumbotron .content .sign_up_form .inputBlock #username {
+	border-bottom: 1px solid #888;
+}
+.jumbotron .content .sign_up_form .inputBlock .show_password {
+	position: absolute;
+	right: 0;
+	padding: 15px;
+	font-size: 15px;
+	color: #333;
+}
+.jumbotron .content .sign_up_form .submitBlock {
+	padding: 40px 0 0;
+}
+.jumbotron .content .sign_up_form .submitBlock #sign_up_btn {
+	background-color: #999;
+	color: #fff;
+	font-size: 18px;
+	transition: .2s ease-in-out;
+	box-shadow: 0px 1px 2px #111;
+	font-weight: 300;
+}
+.jumbotron .content .sign_up_form .submitBlock #sign_up_btn:hover {
+	background-color: #888;
+}
+.jumbotron .content .sign_up_form .orBlock {
+	margin: 20px 0;
+	color: #666;
+}
+.jumbotron .content .sign_up_form .secondary_loginBlock {
+	border-radius: 0;
+	margin: 0;
+	padding: 10px;
+	border: none;
+	background: #fff;
+	width: 49%;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 1px 1px 2px #888;
+}
+.jumbotron .content .sign_up_form .secondary_loginBlock:hover {
+	background: #eee;
+}
+.jumbotron .content .sign_up_form .secondary_loginBlock a {
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+.jumbotron .content .sign_up_form  #facebook_login a {
+	color: #3b5998;
+}
+
+.jumbotron .content .sign_up_form  #google_login a {
+	color: #d34836;
+}
+
+/* error styling */
+.error {
+	position: absolute;
+	width: 100px;
+	min-height: 40px;
+	background: rgba(233,53,53,0.6);
+	padding: 15px 10px;
+	right: -500%;
+	transition: .5s ease-in-out;
+	z-index: 9999;
+	border-radius: 8px;
+}
+.error i {
+	position: absolute;
+	width: 10px;
+	color: rgba(233,53,53,0.6);
+	font-size: 28px;
+}
+.error #sign_up_emailErrText , .error #sign_in_emailErrText  {
+	font-size: 13px;
+	color: #111;
+}
+
+/* for sign up form email error   */
+.sign_up_form .error {
+	//right should be -120px
+}
+.sign_up_form .error i {
+	top: 0;
+	left: -10px;
+}
+/* for sign in form email error   */
+.sign_in_form .error {
+	//right should be 0px
+}
+.sign_in_form .error i {
+	top: -19px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 991px)
+{
+	.jumbotron .content .information .slide_bullet {
+		top: 440px;
+	}
+}

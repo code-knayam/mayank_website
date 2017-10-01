@@ -1,0 +1,175 @@
+ Create or replace  type address_type as object (  STREET VARCHAR2(25),CITY VARCHAR2(25),STATE VARCHAR2(20)); 
+/ 
+
+ Create table customer(cno number(3), Cname varchar2(15),
+ address address_type); 
+
+-------------------------------------------------------------------
+-->insert data to customer table
+
+ Insert into customer values(101,'Anand', Address_type('Tarnaka','Hyderabad','AP')); 
+----------------------------------------------------------------------
+
+-->to fetch values from table
+select cust.address.city ,cust.address.STATE,cno, cname from customer cust; 
+-----------------------------------------------------------------
+--> updating data for address type
+
+UPDATE CUSTOMER SET ADDRESS = ADDRESS_TYPE('12-10','GHFG','HYD') 
+WHERE CNO = 101; 
+----------------------------------------------------------------
+
+
+select cust.address.city ,cust.address.STATE,cno, cname from customer cust; 
+
+
+--------------------------------------------------------------------
+ declare 
+  b address_type; 
+ begin 
+ b := ADDRESS_TYPE('11-5','ggg','sec'); 
+update customer set address = b where cno = 101;
+ end; 
+/ 
+
+-----------------------------------------------------------
+
+declare 
+  b address_type; 
+ begin 
+select address into b from customer where cno=101; 
+dbms_output.put_line(b.city || ' ' || b.state);
+ end; 
+/ 
+
+--------------------------------------------------------------------
+
+declare 
+ custrec customer%rowtype;
+ begin 
+select * into custrec from customer where cno=101; 
+dbms_output.put_line(custrec.address.city);
+ end; 
+/ 
+
+
+------------------------------------------
+drop type typename;
+drop type address_type;
+-----------------------------------------------------------
+Declaring Methods 
+
+
+-->A type declaration can also include methods that are defined on values of that type. 
+-->The method is declared by  
+ MEMBER FUNCTION  in the CREATE TYPE statement, and the code for the function itself  (the definition of the method) is in a separate CREATE TYPE BODY statement
+
+Create  type address_type as object (  STREET VARCHAR2(25),
+CITY VARCHAR2(25),
+STATE VARCHAR2(6),
+ member function statefullName(state VARCHAR2) return VARCHAR2); 
+/
+
+ CREATE   TYPE BODY address_type 
+as
+ member function statefullName(state VARCHAR2) return VARCHAR2
+is
+begin
+if  (upper(state)='AP') then return 'Andhra Pradesh';
+elsif  (upper(state)='MP') then return 'Madhya Pradesh';
+elsif  (upper(state)='MH') then return 'Maharstra';
+--else return 'no such state'
+end if;
+end;
+end;
+
+---------------------------------------------
+
+ Create table customer(cno number(3), Cname varchar2(15),
+ address address_type); 
+
+------------------------------------------------------
+ Insert into customer values(101,'Anand', Address_type('Tarnaka','Hyderabad','AP')); 
+
+----------------------------------------------------------
+select cust.address.STATE,cust.address.statefullName(cust.address.STATE) from customer cust;
+
+---------------------------------------------------------------------
+
+-->CASCADE  : If you want to propagate changes to dependent types and tables 
+--> INVALIDATE : TO invalidate all dependent objects without any checking mechanism 
+
+
+ ALTER TYPE address_type ADD ATTRIBUTE (B NUMBER)  CASCADE ;
+
+-----------------------------------------------------------------
+nested table
+-----------------------------------------------------------------
+
+--> It is useful for data models requiring referential integrity 
+and is suitable for master detail and one to many relationship.  
+--> A Nested Table is a database table which stores data in it, that cannot be accessed directly. 
+-->A Nested Table can be included in a table definition as one of the columns. That is why they are known as Nested Tables.  
+-->Nested Tables can be manipulated directly using SQL
+
+Create  type address_type as object (  STREET VARCHAR2(25),CITY VARCHAR2(25),STATE VARCHAR2(20)); 
+/
+create type address as table of address_type;
+/
+
+
+Create table customer(cno number(3), Cname varchar2(15),
+ empaddress address) nested table empaddress store as empaddress_table;
+
+   ------------------------------------------------------------
+constraints on nested table
+---------------------------------
+alter table empaddress_table 
+add constraint chk111 check( STATE in ('AP','MP','MH'));
+
+-------------------------------------------------------
+alter table empaddress_table 
+add constraint chk112 check(city is not null);
+--------------------------------------------------------
+INSERT INTO customer values(101,'Amit',address(address_type('Tarnaka','Hyderabad','AP'), address_type('chinchwad','pune','MH')));
+
+-------------------------------------------------------------------
+DECLARE    
+  address_VAR address;
+ BEGIN    address_VAR  := address(address_TYPE('chinchwad','pune','MH')); 
+INSERT INTO customer VALUES(102, 'anju', address_VAR);
+
+ END; 
+
+--------------------------------------------------------------
+select cust.empaddress from customer cust where cno=102
+
+update customer set empaddress=address(address_type('Tarnaka','Hyderabad','AP')) where cno=102;
+
+select cust.empaddress from customer cust where cno=102
+
+--------------------------------------------------------------
+
+
+
+
+declare 
+  empaddress1 customer.empaddress%type;
+  name customer.Cname%type; 
+ cursor c1 is select Cname, empaddress from customer ; 
+ begin 
+   
+    open c1;
+   loop 
+   fetch c1 into name,empaddress1; 
+    exit when (c1%notfound);
+    dbms_output.put_line(' name =' || name); 
+
+   for i in 1 .. empaddress1.count 
+     loop 
+    dbms_output.put_line(empaddress1(i).city || ' '||empaddress1(i).state); 
+    end loop; 
+dbms_output.put_line('----------------------');
+ end loop; 
+ close c1; 
+ end;  

@@ -1,0 +1,15 @@
+/* Footer */
+.footer {
+       background-color: #111;;
+       color: #fff;
+       padding: 10px;
+
+}
+.footer h3, .footer a {
+  font-size: 15px;
+       color: #fff;
+  font-family: monospace; 
+}
+.footer .a-center {
+	text-align: center;
+}

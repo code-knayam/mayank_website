@@ -1,0 +1,15 @@
+
+<div class = "navigation">
+
+  <div class="row">
+    <div class="col-md-3 navTab" ng-repeat = "navItem in navigationItems" style=" background : url( {{navItem.background}} ) center center no-repeat ; background-size: 200%; " id="{{navItem.id}}" >
+      <a href="{{navItem.link}}" target="{{navItem.target}}">
+        <div class="cover">
+          <i class="fa {{navItem.icon}} icon"></i>
+          <h3 class="heading">{{navItem.title}}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>

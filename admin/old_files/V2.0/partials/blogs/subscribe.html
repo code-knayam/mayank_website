@@ -1,0 +1,24 @@
+<div class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div id="close_subscribe_btn">
+        <i class="fa fa-close"></i>
+      </div>
+      <h3 class="heading">Subscribe to stay updated</h3>
+      <br />
+      <h5 class="sub-heading">We dont send spam</h5>
+      <form role="form">
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 inputBlock">
+            <input type="email" class="form-control" ng-model="form_email" ng-blur="checkEmail()" id="email" autocomplete="off" placeholder="Enter your email" required/>
+            <span class="error" ng-bind="form_emailErr"></span>
+          </div>
+        </div>
+        <div class="submitBlock">
+          <a class="submit_btn">Subscribe</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

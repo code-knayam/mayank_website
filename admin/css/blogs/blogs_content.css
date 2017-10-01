@@ -1,0 +1,43 @@
+.section p {
+  font-size: 20px;
+  color: #556;
+  padding: 10px;
+  line-height: 45px;
+  text-align: left;
+}
+.section img {
+  text-align: center;
+  margin: 20px;
+  max-width: 100%;
+  max-width: 100%;
+}
+.section img:last-child {
+  margin-bottom: 100px;
+}
+.section .blockquote-reverse {
+  margin-top: 100px;
+}
+.code-snippet {
+  margin: 30px;
+}
+.code-snippet .linenums{
+  counter-reset:linenumber;
+  text-align: left;
+}
+.code-snippet .linenums span {
+  list-style-type:none;
+
+}
+.code-snippet .linenums span:before{
+  counter-increment:linenumber;
+  content: counter(linenumber) " |";
+  float: left;
+}
+.code-snippet .code_type {
+  float: right;
+  position: relative;
+  right: 10%;
+  padding: 5px;
+  font-size: 10px;
+  background: #999;
+}

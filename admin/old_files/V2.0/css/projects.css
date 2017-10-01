@@ -1,0 +1,125 @@
+
+/*Project*/
+.projects {
+  height: 600px;
+  padding: 0;
+}
+.projects .project_container {
+  display: none;
+  width: inherit;
+  height: inherit;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+.projects .project_frame {
+  height: 100% ;
+  padding: 50px;
+  margin: 0;
+  background: #eee;
+  text-align: center;
+}
+.projects .project_frame .frame_image{
+  width: 650px;
+  height: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.projects .project_content {
+  height: 100% ;
+  padding: 0;
+  margin: 0;
+  background: rgba(259, 203, 203, 0.9);
+  box-shadow: 2px 0 15px #111;
+  z-index: 4;
+}
+.projects .project_content .header {
+  width: 100%;
+  height: 50px;
+  background: #222;
+  margin: 0;
+  padding: 0;
+}
+.projects .project_content .header .nav_arrow {
+  background: rgba(255, 102, 102, 1);
+  height: 50px;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid #444;
+}
+.projects .project_content .header .nav_arrow i {
+  line-height: 50px;
+  font-size: 30px;
+}
+.projects .project_content .header .heading {
+  height: inherit;
+  width: 60%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  text-align: center;
+}
+.projects .project_content .header .heading h3 {
+  font-size: 22px;
+  line-height: 10px;
+  color: rgba(255, 255,255,1);
+  font-family: serif;
+}
+.projects .project_content .about {
+  width: 100%;
+  min-height: 100px;
+  padding: 40px 15px 20px;
+}
+.projects .project_content .about .project_content_title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 10px;
+}
+.projects .project_content .about p {
+  font-size: 16px;
+  color: #444;
+}
+.projects .project_content .tags {
+  width: 100%;
+  height: 200px;
+  padding: 20px 15px;
+}
+.projects .project_content .tags p {
+  margin: 10px 4px 5px;
+  line-height: 40px;
+  padding: 0px 12px;
+  display: inline-block;
+  background: rgba(160,160,160,1);
+  border-radius: 10px;
+}
+.projects .project_content .link {
+  text-align: center;
+  width: 100%;
+}
+.projects .project_content .link a {
+  background-color: rgba(34, 34, 34, 0.6);
+  color: #fff;
+  padding: 10px 15px;
+  transition: .5s ease-in-out;
+}
+.projects .project_content .link a:hover {
+  padding: 10px 35px;
+  box-shadow: 0 0 10px #111;
+  background-color: rgba(34, 34, 34, 0.9);
+}
+/* For scrolling up animation*/
+ .projects .about , .projects .tags , .projects .link , .projects .frame_image {
+  opacity: 0;
+  margin-top: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 995px) {
+  .projects .project_frame {
+    display: none;
+  }
+}
