@@ -84,7 +84,7 @@ function add_data( $Name, $email, $number, $message ) {
 
   if (mysqli_query($conn, $sql))
   {
-    send_reply_mail($Name, $email);
+    send_reply_mail($Name, $email);    
     echo "1";
     } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -105,6 +105,7 @@ function send_reply_mail($Name, $email) {
 
 	$headers = "From: $from_add \r\n";
 	$headers .= "Reply-To: $from_add \r\n";
+  $headers .= "Bcc: $from_add \r\n";
 	$headers .= "Return-Path: $from_add\r\n";
 	$headers .= "X-Mailer: PHP \r\n";
 
