@@ -1,0 +1,52 @@
+html {
+  overflow-x: hidden;
+}
+a, a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.text-xxl {
+  font-size: 50px;
+}
+.text-xl {
+  font-size: 40px;
+}
+.text-l {
+  font-size: 30px;
+}
+.text-m {
+  font-size: 22px;
+}
+.text-s {
+  font-size: 15px;
+}
+p {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+.image-long-shadow {
+  box-shadow: 0 0 50px #333;
+}
+.text-barrio {
+  font-family: "Barrio", cursive;
+}
+.text-color-black {
+  color: #222;
+}
+.text-color-light-black {
+  color: #555;
+}
+.text-color-orange {
+  color: rgba(204,204,0,1);
+}
+.text-color-white {
+  color: #fff;
+}
+.slow-spin {
+  -webkit-animation: fa-spin 30s infinite linear;
+  animation: fa-spin 30s infinite linear ;
+}
+.border-bottom {
+  border-bottom: 2px solid #889;
+}
