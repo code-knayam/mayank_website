@@ -8,7 +8,7 @@ $(document).ready( function() {
     var condition = element - parseInt( $('.menu').css('height') );
     if( pos > condition) {
       $('.menu').css({
-        'background' : 'rgba(51, 51, 51, 0.95)',
+        'background' : 'rgba(1,1,1,1)',
         'box-shadow' : '0 0 20px #333'
       });
     } else {
@@ -16,23 +16,8 @@ $(document).ready( function() {
         'background' : 'transparent',
         'box-shadow' : 'none'
       });
-    }
-    condition = 90 + element ;
-    if (pos > condition ) {
-      $('.section .navigation').css('position', 'fixed');
-    } else {
-      $('.section .navigation').css('position', '');
-    }
+    }    
+    
   }
-
-  $('#subscribe_btn').on('click', function() {
-    $('.subscribe').fadeIn(1000);
-    $('body').css('overflow','hidden');
-  });
-  $('#close_subscribe_btn ').on('click', function() {
-    $('.subscribe').fadeOut(1000);
-    $('body').css('overflow','');
-    console.log('close');
-  });
 
 });

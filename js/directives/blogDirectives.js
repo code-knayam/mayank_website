@@ -1,7 +1,17 @@
 blogs.directive('menuDirective', function() {
   return {
     restrict : 'A',
-    templateUrl : '../partials/blogs/menu.html',
+    templateUrl : '../blogs/menu.html',
+    link : function() {
+
+    }
+  };
+});
+
+blogs.directive('blogMenuDirective', function() {
+  return {
+    restrict : 'A',
+    templateUrl : '../../blogs/menu.html',
     link : function() {
 
     }
@@ -43,9 +53,17 @@ blogs.directive('blogDirective', function() {
 blogs.directive('footerDirective', function(){
   return {
     restrict : 'A',
-    templateUrl : '../partials/footer.html',
+    templateUrl : '../blogs/footer.html',
     link : function( $scope ) {
+    }
+  };
+});
 
+blogs.directive('blogFooterDirective', function(){
+  return {
+    restrict : 'A',
+    templateUrl : '../../blogs/footer.html',
+    link : function( $scope ) {
     }
   };
 });

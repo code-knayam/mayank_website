@@ -1,0 +1,64 @@
+/* MENU */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  transition: .5s ease-in;
+}
+.menu #logo {
+  cursor: pointer;
+  height: 50px;
+  float: left;
+  padding: 10px 30px;
+}
+.menu #logo a:hover {
+  color: rgba(204,204,0,1);
+  transition: .5s ease-in-out;
+}
+.menu #menu_open_icon {
+  cursor: pointer;
+  height: 50px;
+  float: right;
+  padding: 10px 30px;
+  transition: .5s ease-in-out;
+}
+.menu_container {
+  position: fixed;
+  background: rgba(10,10,10,0.9);
+  left: 0;
+  top: -700px;
+  min-height: 700px;
+  width: 100%;
+  margin: 0;
+  z-index: 99999;
+  display: none;
+}
+.menu_container .flipper  {
+  transform-origin: bottom;
+  transform: rotateX(0deg);
+  transition: 1.5s linear;
+  background: rgba(10,10,10,0.9);
+  width: 100%;
+  height: 700px;
+  padding-top: 200px;
+}
+.menu_container #menu_close_icon {
+  text-align: right;
+  height: 60px;
+  margin: 30px;
+}
+.menu_container #menu_close_icon i {
+  cursor: pointer;
+}
+.menu_container .menu_items {
+  list-style: none;
+  transform: rotateX(180deg);
+}
+.menu_container .menu_items .menu_item {
+  cursor: pointer;
+  margin: 20px;
+}
