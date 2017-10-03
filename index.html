@@ -45,6 +45,7 @@
     });
     </script>
     <title>Hello World!</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   </head>
 
@@ -132,7 +133,7 @@
               <h5 class="text-m  text-color-white">{{work.type}}</h5>
               <span class="tag text-color-orange" >{{work.tags}}</span>
               <br />
-              <a ng-href="{{work.link}}" class="link" target="_blank">Have a look</a>
+              <a ng-href="{{work.link}}" class="link" target="{{work.tab}}">Have a look</a>
               </div>
             </div>
           </div>
@@ -162,7 +163,7 @@
               <h5 class="text-m  text-color-white">{{project.type}}</h5>
               <span class="tag text-color-orange" >{{project.tags}}</span>
               <br />
-              <a ng-href="{{project.link}}" class="link" target="_blank">Have a look</a>
+              <a ng-href="{{project.link}}" class="link" target="{{project.tab}}">Have a look</a>
               </div>
             </div>
           </div>
