@@ -30,7 +30,7 @@ app.controller('projectsController', function($scope) {
       'type' : 'P5 JS',
       'tags' : 'p5.js, HTML',
       'link' : 'https://code-knayam.github.io/p5-js/',
-      'tab' : ''
+      'tab' : '_blank'
     },
     {
       'title' : 'Facebook Birthday Wish',
