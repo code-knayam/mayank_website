@@ -29,7 +29,7 @@ app.controller('projectsController', function($scope) {
       'image_path' : 'images/p5_logo.png',
       'type' : 'P5 JS',
       'tags' : 'p5.js, HTML',
-      'link' : 'p5-js/',
+      'link' : 'https://code-knayam.github.io/p5-js/',
       'tab' : ''
     },
     {
