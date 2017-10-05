@@ -14,6 +14,7 @@
   height: 50px;
   float: left;
   padding: 10px 30px;
+  padding-left: 80px;
 }
 .menu #logo a:hover {
   color: rgba(204,204,0,1);
@@ -61,4 +62,48 @@
 .menu_container .menu_items .menu_item {
   cursor: pointer;
   margin: 20px;
+}
+
+/*Secondary Menu*/
+.secondaryMenu {
+  color: #fff;    
+  padding: 0;  
+  margin: 0;
+  background: #222;
+  height: 100%;    
+  width: 300px;  
+  padding-top:  80px;
+  position:   fixed;
+  top:        0;
+  bottom:     0;
+  left:       -300px;
+  right:      0;        
+  overflow:   hidden;
+  overflow-y: scroll;
+  z-index: 999;  
+}
+.secondaryMenu .heading {
+  text-align: center;
+  position: fixed;
+  margin: 0;
+  padding: 80px 0 30px;
+  background: #222;
+  z-index: 2;
+  width: 300px;
+  top: 0;
+  
+}
+.secondaryMenu .list-items {
+  list-style: none;  
+  margin-top: 50px;
+  padding-left: 0px;
+  /*max-height: 80%;*/
+  /*margin-bottom: 100px;  */
+  /*overflow-y:scroll;*/
+}
+.secondaryMenu .list-items .list-item {
+  background: rgba(100, 200, 10, 0.8);
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 10px;
 }

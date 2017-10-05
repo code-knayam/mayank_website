@@ -31,18 +31,6 @@ a, a:hover {
 .jumbotron .social_icon a:hover {
   color: #000000;
 }
-.jumbotron #subscribe_btn {
-  border: 1px solid #aea;
-  padding: 10px 15px;
-  margin: 10px;
-  font-size: 19px;
-  color: #111;
-  transition: .5s ease-in;
-}
-.jumbotron #subscribe_btn:hover {
-  padding: 10px 30px;
-}
-
 
 /* Section */
 .section {
@@ -97,102 +85,6 @@ a, a:hover {
 }
 .section .blog .date .separator {
   padding-right: 5px;
-}
-
-/* Navigation*/
-.section .navigation {
-  min-height: 300px;
-  width: 200px;
-  margin: 30px;
-  margin-left: 80px;
-  background: rgba(255,232,193,0.5);
-  padding: 30px;
-  padding-left: 3px;
-  top: 50px;
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 0px 0px 2px #aaa;
-  border: 3px solid #aaa;
-  /*position: fixed;*/
-}
-.section .navigation .nav_list {
-  list-style: none;
-  text-align: left;
-  margin: 0;
-}
-.section .navigation .nav_list .nav_item {
-  padding: 5px 0px;
-  cursor: pointer;
-  transition: .5s ease-in-out;
-}
-.section .navigation .nav_list .nav_item:hover {
-  padding-left: 5px;
-}
-.section .navigation .nav_list .nav_item a {
-  color: #666;
-  font-family: sans-serif;
-  font-size: 17px;
-  text-decoration: none;
-}
-
-/*Subscribe section*/
-.subscribe {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 100px;
-  background: rgba(10,10,10,0.7);
-  display: none;
-  text-align: center;
-}
-.subscribe .row {
-  background-color: rgba(313, 313, 313, 1);
-  margin: 50px;
-  padding: 50px;
-}
-.subscribe .heading {
-  font-size: 40px;
-  font-family: 'Barrio', cursive;
-  color: #444;
-}
-.subscribe .sub-heading {
-  font-size: 20px;
-  font-family: sans-serif;
-  color: #665;
-}
-.subscribe .row form .row {
-  padding: 20px;
-  margin: 20px;
-}
-.subscribe #close_subscribe_btn {
-  float: right;
-  color: #111;
-  font-size: 20px;
-  cursor: pointer;
-}
-.subscribe .inputBlock .form-control {
-  border: none;
-  border-bottom: 1px solid rgba(101, 102, 255, 1);
-  border-radius: 0;
-  box-shadow: none;
-  text-align: center;
-}
-.subscribe  .inputBlock .error {
-	color: #a35c22;
-	padding-top: 5px;
-}
-.subscribe  .submitBlock .submit_btn {
-  padding: 10px 20px;
-  cursor: pointer;
-  text-decoration: none;
-  border: 1px solid rgba(101, 102, 255, 1);
-  transition: .5s ease-in-out;
-}
-.subscribe  .submitBlock .submit_btn:hover {
-  box-shadow: 1px 1px 15px #333;
-  padding: 10px 30px;
 }
 
 /* Media Queries */

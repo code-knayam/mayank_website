@@ -67,3 +67,13 @@ blogs.directive('blogFooterDirective', function(){
     }
   };
 });
+
+blogs.directive('blogSecondaryMenuDirective', function() {
+  return {
+    restrict : 'A',
+    templateUrl : '../../blogs/secondaryMenu.html',
+    link : function() {
+
+    }
+  };
+});

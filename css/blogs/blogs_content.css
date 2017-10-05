@@ -1,22 +1,57 @@
+a, a:hover {
+  text-decoration: none;
+}
+
+/* Jumbotron */
+.jumbotron {
+  min-height: 520px;
+  margin: 0;
+  text-align: center;
+  padding-top: 150px;
+  color: #aea;
+}
+.jumbotron h3 {
+  font-size: 60px;
+  font-family: monospace;
+  padding: 5px;
+  color: #fff;
+}
+
+.section_part {
+  /*width: 100%;*/
+  margin: 0;
+  padding: 0;
+}
+
+/* Section */
+.section {
+  min-height: 630px;
+  background-color: #eee;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
 .section p {
-  font-size: 20px;
+  font-size: 15px;
   color: #556;
   padding: 10px;
-  line-height: 45px;
+  line-height: 25px;
   text-align: left;
 }
 .section img {
   text-align: center;
-  margin: 20px;
-  max-width: 100%;
-  max-width: 100%;
+  margin: 10px 4px;
+  max-width: 40%;
+  max-width: 40%;
 }
 .section img:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .section .blockquote-reverse {
   margin-top: 100px;
 }
+
 .code-snippet {
   margin: 30px;
 }

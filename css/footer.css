@@ -7,6 +7,7 @@
   padding: 30px;
   margin: 0;
   line-height: 50px;
+  z-index: 9999;
 }
 .footer .left_content {
   color: #ddd;
