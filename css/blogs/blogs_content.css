@@ -27,8 +27,7 @@ a, a:hover {
 .section {
   min-height: 630px;
   background-color: #eee;
-  text-align: center;
-  width: 100%;
+  text-align: center;  
   padding: 20px;
 }
 

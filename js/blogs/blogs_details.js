@@ -8,7 +8,7 @@ var blogs_details = [
           {
             'blog_title' : 'Adding Extra Space on Dock in Mac',
             'blog_date' : '1st May, 2017',
-            'blog_path' : 'may/blog_1.html'
+            'blog_path' : 'may/addingExtraSpaceTileOnDockInMac/'
           }
         ]
       }

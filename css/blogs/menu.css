@@ -14,7 +14,7 @@
   height: 50px;
   float: left;
   padding: 10px 30px;
-  padding-left: 80px;
+  padding-left: 100px;
 }
 .menu #logo a:hover {
   color: rgba(204,204,0,1);
@@ -69,41 +69,61 @@
   color: #fff;    
   padding: 0;  
   margin: 0;
-  background: #222;
+  background: rgb(61, 68, 79);
   height: 100%;    
-  width: 300px;  
+  width: 320px;  
   padding-top:  80px;
   position:   fixed;
   top:        0;
   bottom:     0;
-  left:       -300px;
+  left:       0;
   right:      0;        
   overflow:   hidden;
   overflow-y: scroll;
-  z-index: 999;  
+  background: #fff;
+  border-right: 5px solid #111;
+  background: rgba(91, 98, 109, 0.8);
 }
 .secondaryMenu .heading {
   text-align: center;
   position: fixed;
   margin: 0;
   padding: 80px 0 30px;
-  background: #222;
+  background: rgb(61, 68, 79);
+  color: #ddd;
   z-index: 2;
-  width: 300px;
+  width: 320px;
   top: 0;
-  
+  border-right: 5px solid #111; 
+  border-bottom: 3px solid #aaa; 
 }
 .secondaryMenu .list-items {
   list-style: none;  
   margin-top: 50px;
   padding-left: 0px;
-  /*max-height: 80%;*/
-  /*margin-bottom: 100px;  */
-  /*overflow-y:scroll;*/
 }
 .secondaryMenu .list-items .list-item {
-  background: rgba(100, 200, 10, 0.8);
-  margin: 0;
-  padding: 10px;
-  margin-bottom: 10px;
+  margin: 0 10px;
+  padding: 30px 10px;
+  border-bottom: 2px solid rgba(204,204,0,1);
+  transition: .5s ease-in-out;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.secondaryMenu .list-items .list-item a {
+  color: rgba(1,1,1,0.7);
+  font-size: 15px;
+}
+.secondaryMenu .list-items .list-item:hover {   
+  padding: 40px 15px;  
+  opacity: 1;
+  background: rgba(91, 98, 109, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 995px) {
+  .menu #logo {
+    text-align: center;
+    padding-left: 10px;
+  } 
 }
