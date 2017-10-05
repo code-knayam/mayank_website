@@ -19,14 +19,14 @@
 
 
   <!-- Importing Files for angular -->
-  <script src="../../js/blogs/blogs_details.js"></script>
-  <script src="../../js/module.js"></script>
-  <script src="../../js/directives/blogDirectives.js"></script>
+  <script src="../../../js/blogs/blogs_details.js"></script>
+  <script src="../../../js/module.js"></script>
+  <script src="../../../js/directives/blogDirectives.js"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script src="../../js/jQuery/blogs/index.js"></script>
+  <script src="../../../js/jQuery/blogs/index.js"></script>
 
   <!-- CSS links -->
   <!-- bootstrap -->
@@ -36,15 +36,15 @@
   <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 
   <!-- stylesheets -->
-  <link href="../../css/blogs/main.css" rel="stylesheet">
-  <link href="../../css/blogs/blogs_content.css" rel="stylesheet">
-  <link href="../../css/blogs/menu.css" rel="stylesheet">
-  <link href="../../css/base.css" rel="stylesheet">
-  <link href="../../css/footer.css" rel="stylesheet">
+
+  <link href="../../../css/footer.css" rel="stylesheet">
+  <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">
+  <link href="../../../css/blogs/menu.css" rel="stylesheet">
+  <link href="../../../css/base.css" rel="stylesheet">
 
 
   <title>Code-knayam Blogs</title>
-  <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
 
   <!-- <script type="application/ld+json">
       {
@@ -72,12 +72,17 @@
 
   <div blog-menu-directive></div>
 
-  <div class="jumbotron" style="background: url('../../images/blog_1_1.png') no-repeat center center ; background-size: cover">
-    <h3>Adding Extra Space on Dock in Mac</h3>
+  <div class="col-md-3">
+    <div blog-secondary-menu-directive> </div>
   </div>
 
-  <div class="section">
-    <div class="container">
+  <div class="col-md-9" style="padding: 0">
+    <div class="jumbotron" style="background: url('../../../images/blog_1_1.png') no-repeat center center ; background-size: cover">
+      <h3>Adding Extra Space on Dock in Mac</h3>
+    </div>
+
+    <div class="section">
+
       <div class="row">
         <h3 class="heading">Why is it Usueful ?</h3>
         <p>
@@ -115,7 +120,7 @@
         <p>
           Voila, you would see an extra space tile just where the icons end on dock.
         </p>
-        <img src="../../images/blog_1_2.png" />
+        <img src="../../../images/blog_1_2.png" />
         <p>
           Now you can rearrange it just like other icons, by dragging it over to its new place.
           <br /><br /> To remove it, you just need to drag it out of the dock and it would be removed from the dock.
@@ -124,7 +129,7 @@
           Using this way you can keep your dock organized.<br /> Just like I have done. Grouping the icons of different categories
           into different group.
         </p>
-        <img src="../../images/blog_1_1.png" />
+        <img src="../../../images/blog_1_1.png" />
         <blockquote class="blockquote-reverse">
           <footer>
             Hope you liked it and found it useful.
@@ -138,14 +143,14 @@
         <div class="fb-like" data-href="http://mayankjain.me/blogs/#/addExtraSpaceOnDock" data-layout="button_count" data-action="like"
           data-size="small" data-show-faces="true" data-share="true"></div>
         <br />
-        <!-- </div>
-    <div class="row facebook_plugins"> -->
         <div class="fb-comments" data-href="http://www.mayankjain.me/blogs/#/addExtraSpaceOnDock" data-numposts="5"></div>
       </div>
+
     </div>
+
+    <div blog-footer-directive></div>
   </div>
 
-  <div blog-footer-directive></div>
 
 </body>
 

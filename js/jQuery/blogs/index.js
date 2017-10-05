@@ -16,8 +16,13 @@ $(document).ready( function() {
         'background' : 'transparent',
         'box-shadow' : 'none'
       });
-    }    
-    
+    }
+      
   }
+
+
+  $('#show_menu').click(function(){
+    $('.secondaryMenu').css('left','0');
+  });
 
 });

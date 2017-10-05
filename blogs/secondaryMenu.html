@@ -1,0 +1,14 @@
+<div class="secondaryMenu">
+    <div class="container">
+        <div class="row">
+
+            <h4 class="heading text-barrio">Recent blogs</h4>
+
+            <ul class="list-items">
+                <li class="list-item" ng-repeat="blog in blogs" ng-click="redirectTo(blog.blog_path)">
+                    <a href="">{{blog.blog_title}}</a>
+                </li>                
+            </ul>
+        </div>
+    </div>
+</div>

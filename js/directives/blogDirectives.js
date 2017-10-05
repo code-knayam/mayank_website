@@ -11,7 +11,7 @@ blogs.directive('menuDirective', function() {
 blogs.directive('blogMenuDirective', function() {
   return {
     restrict : 'A',
-    templateUrl : '../../blogs/menu.html',
+    templateUrl : '../../../blogs/menu.html',
     link : function() {
 
     }
@@ -62,8 +62,30 @@ blogs.directive('footerDirective', function(){
 blogs.directive('blogFooterDirective', function(){
   return {
     restrict : 'A',
-    templateUrl : '../../blogs/footer.html',
+    templateUrl : '../../../blogs/footer.html',
     link : function( $scope ) {
+    }
+  };
+});
+
+blogs.directive('blogSecondaryMenuDirective', function() {
+  return {
+    restrict : 'A',
+    templateUrl : '../../../blogs/secondaryMenu.html',
+    controller : function($scope, $window) {
+      $scope.redirectTo = function(path) {
+          path = '../../' + path;
+          $window.location.href = path;
+      };
+    },
+    link : function( $scope ) {
+      $scope.blogs = [];      
+      for(var month in blogs_details[0].month_container) {        
+        for(var blog in blogs_details[0].month_container[month].blog_container) {          
+          $scope.blogs.push(blogs_details[0].month_container[month].blog_container[blog]);
+        }
+      }
+
     }
   };
 });
