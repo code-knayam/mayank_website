@@ -87,6 +87,6 @@ app.controller('aboutMeController', function($scope){
     'title' : 'Adding Extra Space on Dock in Mac',
     'image_path' : 'images/blog_1_1.png',
     'type' : 'Blog',
-    'link' : 'http://www.mayankjain.me/blogs/may/blog_1.html'
+    'link' : 'blogs/may/addingExtraSpaceTileOnDockInMac/'
   };
 });
