@@ -79,10 +79,9 @@
   left:       0;
   right:      0;        
   overflow:   hidden;
-  overflow-y: scroll;
-  background: #fff;
-  border-right: 5px solid #111;
-  background: #cbb;
+  overflow-y: scroll;  
+  border-right: 3px solid #111;
+  background: #a0a0a0;
 }
 .secondaryMenu .heading {
   text-align: center;
@@ -94,7 +93,7 @@
   z-index: 2;
   width: 320px;
   top: 0;
-  border-right: 5px solid #111; 
+  border-right: 3px solid #111; 
   border-bottom: 3px solid #111; 
 }
 .secondaryMenu .list-items {
@@ -104,20 +103,19 @@
 }
 .secondaryMenu .list-items .list-item {
   margin: 0 10px;
-  padding: 30px 10px;
+  padding: 15px 10px;
   border-bottom: 2px solid #444;
   transition: .5s ease-in-out;
   opacity: 0.7;
   cursor: pointer;
 }
 .secondaryMenu .list-items .list-item a {
-  color: #444;
+  color: #111;
   font-size: 15px;
 }
 .secondaryMenu .list-items .list-item:hover {   
-  padding: 35px 15px;  
-  opacity: 1;
-  /*background: rgba(91, 98, 109, 0.5);*/
+  padding: 15px 20px;  
+  opacity: 1;   
 }
 
 /* Media Queries */

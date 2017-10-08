@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <!-- META DATA -->
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="description" content="Hiding files in MAC">
+  <meta name="keywords" content="blog, code-knayam, mac, space tile, mac dock ,mayank jain, simply_mayankk, mayankjain1394@gmail.com, contact mayank jain, HTML, CSS, JavaScript, VSEC, DAMS, Kanpur, freelancer, bootstrap, php, jQuery, mayank jain info, personal website">
+  <meta name="author" content="Mayank Jain">
+  <meta name="robots" content="index follow">
+  <meta name="revisit-after" content="2 days">
+  <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
+
+  <!-- JS links -->
+  <!-- angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+  <!-- Importing Files for angular -->
+  <script src="../../../js/blogs/blogs_details.js"></script>
+  <script src="../../../js/module.js"></script>
+  <script src="../../../js/directives/blogDirectives.js"></script>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+  <script src="../../../js/jQuery/blogs/index.js"></script>
+
+  <!-- CSS links -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- Gogle fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+  <!-- stylesheets -->
+
+  <link href="../../../css/footer.css" rel="stylesheet">
+  <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">
+  <link href="../../../css/blogs/menu.css" rel="stylesheet">
+  <link href="../../../css/base.css" rel="stylesheet">
+
+
+  <title>Code-knayam Blogs</title>
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+
+  <!-- <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "WebSite",
+        "name" : "Mayank Jain",
+        "alternateName" : "MJ",
+        "url" : "http://www.mayankjain.me"
+      }
+    </script> -->
+
+</head>
+
+<body ng-app="myBlogs">
+  <div id="fb-root"></div>
+  <script>
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div blog-menu-directive></div>
+
+  <div class="col-md-3">
+    <div blog-secondary-menu-directive> </div>
+  </div>
+
+  <div class="col-md-9" style="padding: 0">
+    <div class="jumbotron" style="background: url('images/jumboImage.jpg') no-repeat center center ; background-size: cover">
+      <h3>Hiding Files In MAC</h3>
+    </div>
+
+    <div class="section">
+
+      <div class="row">
+        <h3 class="heading">There's always some stuff that should be hidden !!</h3>
+        <p>
+          Everyone has some personal files that we need to hide containing personal / important info or some STUFF ;) <br>
+          This STUFF is usually kept inside a complex folder strucutre. Hidden folder inside folder in a recursive manner. <br><br>
+          You can do this just by a single command on the terminal - 
+        </p>
+        <ul>
+          <li>
+            <p>
+              Open the terminal - Press <kbd>command + space</kbd>
+            </p>
+          </li>
+          <li>
+            <p>
+              Type in <code>terminal</code> and press <kbd>return</kbd>. Terminal window would open.<br />
+            </p>
+          </li>
+          <li>
+            <p>
+              Now type in the following lines.<br /><br>              
+              <code>
+                defaults write com.apple.finder AppleShowAllFiles YES
+              </code>
+              <br>
+              <br />
+              Press <kbd>return</kbd>
+              <br />
+              <br> <br>
+              Now all hidden files would be visiblle if you go inside the Finder. <br>
+            </p>
+          </li>
+          <li>  
+            <p>              
+              In MAC, files or folders beginning with a dot ( . ) are considered to be hidden. 
+              So just rename your file, which you want to hide, to begin with a dot ( . )
+              <br>
+              Ex->  .hidden
+              <br><br>
+              Now, to hide the files, again open the terminal as above. And this time type in this line of code ->
+              <br>
+              <code>
+                defaults write com.apple.finder AppleShowAllFiles NO
+              </code>
+              <br><br>
+              Press <kbd>return</kbd>
+              <br><br>
+              This would hide all the files, beginning with a dot ( . )
+            </p>
+          </li>
+        </ul>
+        <p>
+          Great job. You just secured all your STUFF.
+        </p>        
+        <blockquote class="blockquote-reverse">
+          <footer>
+            Hope you liked it and found it useful.
+            <br /> Follow to get more blogs like this.
+            <br /> Would love to hear from you people be it for suggestions , corrections or just chat.
+            <br /> Mayank Jain
+          </footer>
+        </blockquote>
+      </div>
+      <div class="row" id="facebook_plugins">
+        <div class="fb-like" data-href="http://mayankjain.me/blogs/#/addExtraSpaceOnDock" data-layout="button_count" data-action="like"
+          data-size="small" data-show-faces="true" data-share="true"></div>
+        <br />
+        <div class="fb-comments" data-href="http://www.mayankjain.me/blogs/#/addExtraSpaceOnDock" data-numposts="5"></div>
+      </div>
+
+    </div>
+
+    <div blog-footer-directive></div>
+  </div>
+
+
+</body>
+
+</html>
