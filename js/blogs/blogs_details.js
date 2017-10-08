@@ -11,6 +11,16 @@ var blogs_details = [
             'blog_path' : 'may/addingExtraSpaceTileOnDockInMac/'
           }
         ]
+      },
+      {
+        'month' : 'October',
+        'blog_container' : [
+          {
+            'blog_title' : 'Hiding Files In Mac OS',
+            'blog_date' : '8th October, 2017',
+            'blog_path' : 'october/hidingFilesInMac/'
+          }
+        ]
       }
     ]
   }
