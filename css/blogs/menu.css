@@ -81,7 +81,9 @@
   overflow:   hidden;
   overflow-y: scroll;  
   border-right: 3px solid #111;
-  background: #a0a0a0;
+  background: #9bc45f;
+  box-shadow: 0 5px 30px #444;
+  z-index: 99;
 }
 .secondaryMenu .heading {
   text-align: center;
@@ -89,7 +91,7 @@
   margin: 0;
   padding: 80px 0 30px;
   background: rgb(61, 68, 79);
-  color: #cbb;
+  color: #9bc45f;
   z-index: 2;
   width: 320px;
   top: 0;
@@ -104,7 +106,7 @@
 .secondaryMenu .list-items .list-item {
   margin: 0 10px;
   padding: 15px 10px;
-  border-bottom: 2px solid #444;
+  border-bottom: 2px solid #fff;
   transition: .5s ease-in-out;
   opacity: 0.7;
   cursor: pointer;
@@ -123,5 +125,8 @@
   .menu #logo {
     text-align: center;
     padding-left: 10px;
-  } 
+  }
+  .secondaryMenu {
+    z-index: -1;
+  }
 }
