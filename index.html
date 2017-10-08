@@ -22,6 +22,7 @@
     <script src="js/module.js"></script>
     <script src="js/controller.js"></script>
     <script src="js/contactFormCtrl.js"></script>
+    <script src="js/blogs/blogs_details.js"></script>
 
     <!-- CSS links -->
     <!-- bootstrap -->
@@ -207,8 +208,8 @@
               <div class="front text-center" style="background: url({{latestBlog.image_path}}) center center no-repeat; background-size: cover;">
               </div>
               <div class="back">
-              <h3 class="text-l  text-color-orange text-barrio">{{latestBlog.title}}</h3>
-              <h5 class="text-m  text-color-white">{{latestBlog.type}}</h5>
+              <h3 class="text-l  text-color-orange text-barrio">{{latestBlog.blog_title}}</h3>
+              <h5 class="text-m  text-color-white">Blog</h5>
 <!--              <span class="tag text-color-orange" >{{latestBlog.tags}}</span> -->
               <br />
               <a ng-href="{{latestBlog.link}}" class="link" >Have a look</a>
