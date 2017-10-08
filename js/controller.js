@@ -82,11 +82,9 @@ app.controller('projectsController', function($scope) {
 
 });
 
-app.controller('aboutMeController', function($scope){
-  $scope.latestBlog = {
-    'title' : 'Adding Extra Space on Dock in Mac',
-    'image_path' : 'images/blog_1_1.png',
-    'type' : 'Blog',
-    'link' : 'blogs/may/addingExtraSpaceTileOnDockInMac/'
-  };
+app.controller('aboutMeController', function($scope){  
+  $scope.latestBlog = blogs_details[0].month_container[0].blog_container[0];
+  $scope.latestBlog.link = 'blogs/' + $scope.latestBlog.blog_path;
+  $scope.latestBlog.image_path = $scope.latestBlog.link + 'images/jumboImage.jpg';
+  console.log(blogs_details[0].month_container[0].blog_container[0]);
 });
