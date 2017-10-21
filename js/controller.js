@@ -83,8 +83,8 @@ app.controller('projectsController', function($scope) {
 });
 
 app.controller('aboutMeController', function($scope){  
-  $scope.latestBlog = blogs_details[0].month_container[0].blog_container[0];
+  $scope.latestBlog = blogs_details[0];
   $scope.latestBlog.link = 'blogs/' + $scope.latestBlog.blog_path;
   $scope.latestBlog.image_path = $scope.latestBlog.link + 'images/jumboImage.jpg';
-  console.log(blogs_details[0].month_container[0].blog_container[0]);
+  console.log(blogs_details[0]);
 });

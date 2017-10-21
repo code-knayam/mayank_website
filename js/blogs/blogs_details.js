@@ -7,7 +7,7 @@ var blogs_details = [
       'blog_title': 'Parallax Effect',
       'blog_date': '21st October, 2017',
       'blog_path': 'october/parallaxEffect/',
-      'blog_tags': 'j-Query guide',
+      'blog_tags': 'J-Query Tips an Tricks',
       'blog_desc': 'J-Query can make your page magical !! The background scrolls at a different speed than the other text. This is Parallax Effect. Now, to achieve this you need a few lines of J-Query code.',
       'blog_background':'october/parallaxEffect/images/jumboImage.jpg'
   },
