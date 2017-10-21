@@ -153,14 +153,18 @@ h1, h2, h3, h4, p {
 @media ( max-width: 991px ) {
   .sub-jumbotron {
       text-align: center;
+      padding-left: 50px;
   }
   .sub-jumbotron .sub-jumbotron-left {    
       text-align: center;
       border: none;
       border-bottom: 1px solid rgba(221, 209, 209, 0.7);    
       margin: 0;
-      padding: 20px 20px;
-      height: 150px;
+      padding-top: 60px;
+      height: 200px;
+  }
+  .sub-jumbotron .sub-jumbotron-right {    
+      top: 0;
   }
   .section .blogContainer {
       margin-left: 20px;
