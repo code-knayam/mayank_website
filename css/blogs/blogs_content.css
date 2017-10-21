@@ -1,10 +1,16 @@
+html {
+  background: #aaa;    
+}
 a, a:hover {
   text-decoration: none;
+}
+h1, h2, h3, h4, p {
+  font-family: Courier New, Courier, monospace;
 }
 
 /* Jumbotron */
 .jumbotron {
-  min-height: 520px;
+  min-height: 450px;
   margin: 0;
   text-align: center;
   padding-top: 150px;
@@ -12,8 +18,9 @@ a, a:hover {
 }
 .jumbotron h3 {
   font-size: 60px;
-  font-family: monospace;
+  /* font-family: monospace; */
   padding: 5px;
+  margin: 5px 50px;
   color: #fff;
 }
 
@@ -30,7 +37,9 @@ a, a:hover {
   text-align: center;  
   padding: 20px;
 }
-
+.section .heading {
+  font-weight: 500;  
+}
 .section p {
   font-size: 15px;
   color: #556;
@@ -52,26 +61,40 @@ a, a:hover {
 }
 
 .code-snippet {
-  margin: 30px;
+  margin: 30px 10px;
+  background: rgba(200, 140, 140, 0.8);
+  padding: 10px 5px;
+  border-radius: 5px;
 }
 .code-snippet .linenums{
   counter-reset:linenumber;
   text-align: left;
+  padding: 10px 5px;
 }
-.code-snippet .linenums span {
+.code-snippet .linenums p {
   list-style-type:none;
-
+  padding: 5px;
+  color: #444;
+  line-height: 5px;
+  font-family: Courier New, Courier, monospace;
 }
-.code-snippet .linenums span:before{
+.code-snippet .linenums p:before{
   counter-increment:linenumber;
-  content: counter(linenumber) " |";
+  content: counter(linenumber) " | ";
   float: left;
+  color: #555;
 }
 .code-snippet .code_type {
   float: right;
-  position: relative;
-  right: 10%;
+  position: relative;  
+  right: 3%;
   padding: 5px;
   font-size: 10px;
   background: #999;
+}
+
+@media (max-width: 991px) {
+  .section { 
+    margin-left: 50px;
+  }
 }

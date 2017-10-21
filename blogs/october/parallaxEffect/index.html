@@ -1,0 +1,265 @@
+<html>
+
+<head>
+    <!-- META DATA -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Parallax Effect">
+    <meta name="keywords" content="blog, code-knayam, jquery, jquery tips and tricks, parallax effect, jquery parallax, mayank jain, simply_mayankk, mayankjain1394@gmail.com, contact mayank jain, HTML, CSS, JavaScript, VSEC, DAMS, Kanpur, freelancer, bootstrap, php, jQuery, mayank jain info, personal website">
+    <meta name="author" content="Mayank Jain">
+    <meta name="robots" content="index follow">
+    <meta name="revisit-after" content="2 days">
+    <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
+
+    <!-- FB META TAGS-->
+    <meta property="og:url" content="http://mayankjain.me/blogs/october/parallaxEffect/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Parallax Effect" />
+    <meta property="og:description" content="J-Query can make your page magical !!" />
+    <meta property="og:image" content="http://mayankjain.me/blogs/october/parallaxEffect/images/jumboImage.jpg" />
+
+    <!-- JS links -->
+    <!-- angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <!-- Importing Files for angular -->
+    <script src="../../../js/blogs/blogs_details.js"></script>
+    <script src="../../../js/module.js"></script>
+    <script src="../../../js/blogs/directives/blogDirectives.js"></script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="../../../js/blogs/jQuery/index.js"></script>
+
+    <!-- CSS links -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Gogle fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">
+    <link href="../../../css/blogs/menu.css" rel="stylesheet">
+    <link href="../../../css/footer.css" rel="stylesheet">
+
+
+    <title>Code-knayam Blogs</title>
+    <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon">
+
+    <!-- <script type="application/ld+json">
+                  {
+                    "@context" : "http://schema.org",
+                    "@type" : "WebSite",
+                    "name" : "Mayank Jain",
+                    "alternateName" : "MJ",
+                    "url" : "http://www.mayankjain.me"
+                  }
+                </script> -->
+
+</head>
+
+<body ng-app="myBlogs">
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Menu -->
+    <div blog-menu-directive></div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background: url('images/jumboImage.jpg') no-repeat center center ; background-size: cover">
+        <h3>Parallax Effect</h3>
+    </div>
+
+    <div class="row" style="background: #eee;">
+        <!-- Empty Section -->
+        <div class="col-md-1"></div>
+
+        <!-- Section -->
+        <div class="col-md-8">
+            <div class="section">
+
+                <div class="row">
+                    <h3 class="heading">J-Query can make your page magical !!</h3>
+                    <h4 class="text-muted">20th October, 2017</h4>
+                    <p>
+                        When developing webpage j-query can be of great help in enhancing the look and feel of your webpage.
+                        <br>
+                        Like, if you see above the background scrolls at a different speed than the other text. This is <b>Parallax Efffect.</b>
+                        <br>
+                        Now, to achieve this you need a few lines of J-Query code.
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Suppose we have a small piece of HTML with a small div element.
+                                <div class="code-snippet">
+                                    <div class="code_type">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="linenums">
+                                        <p>
+                                            &lt;div class="jumbotron"&gt;
+                                        </p>           
+                                        <p>
+                                            &nbsp;&nbsp;
+                                            &lt;h3&gt;
+                                                Some heading
+                                            &lt;/h3&gt;
+                                        </p>
+                                        <p>
+                                            &lt;/div&gt;
+                                        </p>
+                                    </div>
+                                </div>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Lets add some CSS styling.
+                                <div class="code-snippet">
+                                    <div class="code_type">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="linenums">
+                                        <p>
+                                            .jumbotron {                                                
+                                        </p>           
+                                        <p>
+                                            &nbsp;&nbsp;
+                                            height: 600px;
+                                        </p>
+                                        <p>
+                                            &nbsp;&nbsp;
+                                            background: url('jumboImage.jpg') center center no-repeat;
+                                        </p>
+                                        <p>
+                                            &nbsp;&nbsp;
+                                            text-align: center;
+                                        </p>
+                                        <p>
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Time for some JS magic - 
+                                What we need to do is basically everytime user scrolls the page, we need to call a helper funciton to animate the background.
+                                We can do this by binding the helper funciton to the scroll event on window.
+                                <br>
+                                <kbd>$(window).bind('scroll', animateJumbotron);</kbd>  
+                                <br><br>
+                                After this, we need to change the background position depending on the amount of page scrolled by the user. We keep track of this by using
+                                <br>
+                                <kbd>var pos = $(window).scrollTop();</kbd>                        
+                                <br><br>
+                                Then we just need to get a new position of background depending on the amount of page scroll done by user and change the CSS property for the element with the new value.
+                                <br><br>
+                                To make things more clear, the code would look something like this - 
+                            </p>
+
+                            <div class="code-snippet">
+                                <div class="code_type">
+                                    <span>JS</span>
+                                </div>
+                                <div class="linenums">
+                                    <p>
+                                        $(document).ready(function () {         
+                                    </p>           
+                                    <p>
+                                        &nbsp;&nbsp;
+                                        $(window).bind('scroll', animateMenu);
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;
+                                        function animateMenu() {
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        var pos = $(window).scrollTop();
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        var velocity = 0.05;
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        $('.jumbotron').each(function () {
+                                    </p>                                        
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        var backHeight = 50 + pos * velocity;
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        $(this).css('backgroundPosition', '50% ' + backHeight + '%');
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        });
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;
+                                        }
+                                    </p>
+                                    <p>                                            
+                                        });
+                                    </p>
+                                
+                                </div>
+                            </div>
+                            <p class="text-muted">
+                                <b>Tip: </b> 
+                                <i> The variable 'velocity' is used to set the speed with which the background image scrolls. Increase the velocity's value for a greater speed.</i>
+                            </p>                                                 
+                        </li>                        
+                    </ul>
+                    <p>
+                        Great job. You just added a great J-Query animation to your web page.
+                    </p>
+                    <blockquote class="blockquote-reverse">
+                        <footer>
+                            Hope you liked it and found it useful.
+                            <br /> Follow to get more blogs like this.
+                            <br /> Would love to hear from you people be it for suggestions , corrections or just chat.
+                            <br /> Mayank Jain
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="row" id="facebook_plugins">
+                    <div class="fb-like" data-href="http://mayankjain.me/blogs/october/parallaxEffect/" data-layout="button_count" data-action="like"
+                        data-size="small" data-show-faces="true" data-share="true"></div>
+                    <br />
+                    <div class="fb-comments" data-href="http://mayankjain.me/blogs/october/parallaxEffect/" data-numposts="5"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Empty Section -->
+        <div class="col-md-3"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <div blog-footer-directive></div>
+
+</body>
+
+</html>

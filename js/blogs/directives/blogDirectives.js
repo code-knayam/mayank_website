@@ -53,6 +53,7 @@ blogs.directive('blogDirective', function() {
 blogs.directive('footerDirective', function(){
   return {
     restrict : 'A',
+    replace: true,
     templateUrl : '../blogs/footer.html',
     link : function( $scope ) {
     }
@@ -62,6 +63,7 @@ blogs.directive('footerDirective', function(){
 blogs.directive('blogFooterDirective', function(){
   return {
     restrict : 'A',
+    replace: true,
     templateUrl : '../../../blogs/footer.html',
     link : function( $scope ) {
     }

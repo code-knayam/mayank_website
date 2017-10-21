@@ -1,132 +1,96 @@
-/* MENU */
+
 .menu {
-  position: fixed;
+  z-index: 9999;    
+}
+
+.menu .horizontal_bar {
+  height: 60px;    
+  width: 100%;
+  position: fixed;  
   top: 0;
   left: 0;
+  right: 0;
+  transition: .5s ease-in-out;
   z-index: 9999;
-  width: 100%;
-  height: 50px;
-  background: transparent;
-  transition: .5s ease-in;
+  background: rgba(1, 1, 1, 0.85);
 }
-.menu #logo {
-  cursor: pointer;
-  height: 50px;
-  float: left;
-  padding: 10px 30px;
-  padding-left: 100px;
+.menu .horizontal_bar .logo {    
+  padding: 10px 15px;    
 }
-.menu #logo a:hover {
-  color: rgba(204,204,0,1);
+.menu .horizontal_bar .logo a {
+  color: #fff;
   transition: .5s ease-in-out;
+  font-size: 30px;
+  font-family: Courier New, Courier, monospace;
 }
-.menu #menu_open_icon {
-  cursor: pointer;
-  height: 50px;
-  float: right;
-  padding: 10px 30px;
+.menu .horizontal_bar .blogs {    
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;  
+}
+.menu .horizontal_bar .blogs a {
+  color: #fff;  
+  font-size: 20px;
   transition: .5s ease-in-out;
+  font-family: Courier New, Courier, monospace;
+}    
+.menu .horizontal_bar .blogs a:hover, .menu .horizontal_bar .logo a:hover {
+  color: rgb(178, 178, 187);  
 }
-.menu_container {
-  position: fixed;
-  background: rgba(10,10,10,0.9);
+
+
+.menu .vertical_bar {    
+  position: fixed;  
+  top: 50px;
   left: 0;
-  top: -700px;
-  min-height: 700px;
-  width: 100%;
-  margin: 0;
-  z-index: 99999;
-  display: none;
-}
-.menu_container .flipper  {
-  transform-origin: bottom;
-  transform: rotateX(0deg);
-  transition: 1.5s linear;
-  background: rgba(10,10,10,0.9);
-  width: 100%;
-  height: 700px;
-  padding-top: 200px;
-}
-.menu_container #menu_close_icon {
-  text-align: right;
-  height: 60px;
-  margin: 30px;
-}
-.menu_container #menu_close_icon i {
-  cursor: pointer;
-}
-.menu_container .menu_items {
-  list-style: none;
-  transform: rotateX(180deg);
-}
-.menu_container .menu_items .menu_item {
-  cursor: pointer;
-  margin: 20px;
-}
-
-/*Secondary Menu*/
-.secondaryMenu {
-  color: #fff;    
-  padding: 0;  
-  margin: 0;
-  background: rgb(61, 68, 79);
-  height: 100%;    
-  width: 320px;  
-  padding-top:  80px;
-  position:   fixed;
-  top:        0;
-  bottom:     0;
-  left:       0;
-  right:      0;        
-  overflow:   hidden;
-  overflow-y: scroll;  
-  border-right: 3px solid #111;
-  background: #9bc45f;
-  box-shadow: 0 5px 30px #444;
-  z-index: 99;
-}
-.secondaryMenu .heading {
-  text-align: center;
-  position: fixed;
-  margin: 0;
-  padding: 80px 0 30px;
-  background: rgb(61, 68, 79);
-  color: #9bc45f;
-  z-index: 2;
-  width: 320px;
-  top: 0;
-  border-right: 3px solid #111; 
-  border-bottom: 3px solid #111; 
-}
-.secondaryMenu .list-items {
-  list-style: none;  
-  margin-top: 50px;
-  padding-left: 0px;
-}
-.secondaryMenu .list-items .list-item {
-  margin: 0 10px;
-  padding: 15px 10px;
-  border-bottom: 2px solid #fff;
+  bottom: 0;    
+  width: 50px;
+  height: 100%;
+  z-index: 999;
   transition: .5s ease-in-out;
-  opacity: 0.7;
-  cursor: pointer;
 }
-.secondaryMenu .list-items .list-item a {
-  color: #111;
-  font-size: 15px;
+.menu .vertical_bar .social_icon_container {        
+  list-style: none;
+  margin: 0;
+  padding: 110px 0;
 }
-.secondaryMenu .list-items .list-item:hover {   
-  padding: 15px 20px;  
-  opacity: 1;   
+.menu .vertical_bar .social_icon_container li {    
+  height: 50px;
+  width: 55px;
+  padding: 0;
+  margin: 10px 0;
 }
-
-/* Media Queries */
-@media (max-width: 995px) {
-  .menu #logo {
-    text-align: center;
-    padding-left: 10px;
-  }
-  .secondaryMenu {
-    z-index: -1;
-  }
+.menu .vertical_bar .social_icon_container .social_icon {    
+  height: 50px;
+  width: 55px;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 30px;   
+  font-size: 22px;        
+  color: rgba(251, 251, 251, 0.8);  
+  box-shadow: 1px 1px 10px #222;
+  transition: .5s ease-in-out;
+  opacity: 0.8;
+}
+.menu .vertical_bar .social_icon_container .social_icon:hover {  
+  opacity: 1;
+}
+#facebook_social_icon {  
+  background: #3b5998;  
+}
+#linkedin_social_icon {  
+  background: #0080ae;
+}
+#mail_social_icon {  
+  background: #111111;
+}
+#instagram_social_icon {  
+  background: #6b453d;
+}
+#github_social_icon {  
+  background: #0b2635;
+}
+#whatsapp_social_icon {  
+  background: #5dbb63;
 }

@@ -28,12 +28,12 @@
   <!-- Importing Files for angular -->
   <script src="../../../js/blogs/blogs_details.js"></script>
   <script src="../../../js/module.js"></script>
-  <script src="../../../js/directives/blogDirectives.js"></script>
+  <script src="../../../js/blogs/directives/blogDirectives.js"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script src="../../../js/jQuery/blogs/index.js"></script>
+  <script src="../../../js/blogs/jQuery/index.js"></script>
 
   <!-- CSS links -->
   <!-- bootstrap -->
@@ -43,11 +43,9 @@
   <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 
   <!-- stylesheets -->
-
-  <link href="../../../css/footer.css" rel="stylesheet">
   <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">
   <link href="../../../css/blogs/menu.css" rel="stylesheet">
-  <link href="../../../css/base.css" rel="stylesheet">
+  <link href="../../../css/footer.css" rel="stylesheet">
 
 
   <title>Code-knayam Blogs</title>
@@ -66,6 +64,7 @@
 </head>
 
 <body ng-app="myBlogs">
+
   <div id="fb-root"></div>
   <script>
     (function (d, s, id) {
@@ -77,89 +76,111 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
+  <!-- Menu -->
   <div blog-menu-directive></div>
 
-  <div class="col-md-3">
-    <div blog-secondary-menu-directive> </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron" style="background: url('images/jumboImage.jpg') no-repeat center center ; background-size: 150%">
+    <h3>Hiding Files In MAC</h3>
   </div>
 
-  <div class="col-md-9" style="padding: 0">
-    <div class="jumbotron" style="background: url('images/jumboImage.jpg') no-repeat center center ; background-size: cover">
-      <h3>Hiding Files In MAC</h3>
+  <div class="row" style="background: #eee;">
+    <!-- Empty Section -->
+    <div class="col-md-1"></div>
+
+    <!-- Section -->
+    <div class="col-md-8">
+      <div class="section">
+
+        <div class="row">
+          <h3 class="heading">There's always some stuff that should be hidden !!</h3>
+          <h4 class="text-muted">18th October, 2017</h4>
+          <p>
+            Everyone has some personal files that we need to hide containing personal / important info or some STUFF ;)
+            <br> This STUFF is usually kept inside a complex folder strucutre. Hidden folder inside folder in a recursive manner.
+            <br>
+            <br> You can do this just by a single command on the terminal -
+          </p>
+          <ul>
+            <li>
+              <p>
+                Open the terminal - Press
+                <kbd>command + space</kbd>
+              </p>
+            </li>
+            <li>
+              <p>
+                Type in
+                <code>terminal</code> and press
+                <kbd>return</kbd>. Terminal window would open.
+                <br />
+              </p>
+            </li>
+            <li>
+              <p>
+                Now type in the following lines.
+                <br />
+                <br>
+                <code>
+                          defaults write com.apple.finder AppleShowAllFiles YES
+                        </code>
+                <br>
+                <br /> Press
+                <kbd>return</kbd>
+                <br />
+                <br>
+                <br> Now all the hidden files would be visible if you go inside the Finder.
+                <br>
+              </p>
+            </li>
+            <li>
+              <p>
+                In MAC, files or folders beginning with a dot ( . ) are considered to be hidden. So just rename your file, which you want
+                to hide, to begin with a dot ( . )
+                <br> Ex-> .hidden
+                <br>
+                <br> Now, to hide the files, again open the terminal as above. And this time type in this line of code ->
+                <br>
+                <code>
+                          defaults write com.apple.finder AppleShowAllFiles NO
+                        </code>
+                <br>
+                <br> Press
+                <kbd>return</kbd>
+                <br>
+                <br> This would hide all the files, beginning with a dot ( . )
+              </p>
+            </li>
+          </ul>
+          <p>
+            Great job. You just secured all your STUFF.
+          </p>
+          <blockquote class="blockquote-reverse">
+            <footer>
+              Hope you liked it and found it useful.
+              <br /> Follow to get more blogs like this.
+              <br /> Would love to hear from you people be it for suggestions , corrections or just chat.
+              <br /> Mayank Jain
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row" id="facebook_plugins">
+          <div class="fb-like" data-href="http://mayankjain.me/blogs/october/hidingFilesInMac/" data-layout="button_count" data-action="like"
+            data-size="small" data-show-faces="true" data-share="true"></div>
+          <br />
+          <div class="fb-comments" data-href="http://mayankjain.me/blogs/october/hidingFilesInMac/" data-numposts="5"></div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="section">
-
-      <div class="row">
-        <h3 class="heading">There's always some stuff that should be hidden !!</h3>        
-        <h4 class="text-muted">18th October, 2017</h4>
-        <p>
-          Everyone has some personal files that we need to hide containing personal / important info or some STUFF ;) <br>          This STUFF is usually kept inside a complex folder strucutre. Hidden folder inside folder in a recursive manner.
-          <br><br> You can do this just by a single command on the terminal -
-        </p>
-        <ul>
-          <li>
-            <p>
-              Open the terminal - Press <kbd>command + space</kbd>
-            </p>
-          </li>
-          <li>
-            <p>
-              Type in <code>terminal</code> and press <kbd>return</kbd>. Terminal window would open.<br />
-            </p>
-          </li>
-          <li>
-            <p>
-              Now type in the following lines.<br /><br>
-              <code>
-                defaults write com.apple.finder AppleShowAllFiles YES
-              </code>
-              <br>
-              <br /> Press <kbd>return</kbd>
-              <br />
-              <br> <br> Now all the hidden files would be visible if you go inside the Finder. <br>
-            </p>
-          </li>
-          <li>
-            <p>
-              In MAC, files or folders beginning with a dot ( . ) are considered to be hidden. So just rename your file, which you want
-              to hide, to begin with a dot ( . )
-              <br> Ex-> .hidden
-              <br><br> Now, to hide the files, again open the terminal as above. And this time type in this line of code
-              ->
-              <br>
-              <code>
-                defaults write com.apple.finder AppleShowAllFiles NO
-              </code>
-              <br><br> Press <kbd>return</kbd>
-              <br><br> This would hide all the files, beginning with a dot ( . )
-            </p>
-          </li>
-        </ul>
-        <p>
-          Great job. You just secured all your STUFF.
-        </p>
-        <blockquote class="blockquote-reverse">
-          <footer>
-            Hope you liked it and found it useful.
-            <br /> Follow to get more blogs like this.
-            <br /> Would love to hear from you people be it for suggestions , corrections or just chat.             
-            <br /> Mayank Jain
-          </footer>
-        </blockquote>
-      </div>
-      <div class="row" id="facebook_plugins">
-        <div class="fb-like" data-href="http://mayankjain.me/blogs/october/hidingFilesInMac/" data-layout="button_count" data-action="like"
-          data-size="small" data-show-faces="true" data-share="true"></div>
-        <br />
-        <div class="fb-comments" data-href="http://mayankjain.me/blogs/october/hidingFilesInMac/" data-numposts="5"></div>
-      </div>
-
-    </div>
-
-    <div blog-footer-directive></div>
+    <!-- Empty Section -->
+    <div class="col-md-3"></div>
   </div>
 
+
+  <!-- Footer -->
+  <div blog-footer-directive></div>
 
 </body>
 
