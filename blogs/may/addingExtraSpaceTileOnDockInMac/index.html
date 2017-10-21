@@ -28,12 +28,12 @@
   <!-- Importing Files for angular -->
   <script src="../../../js/blogs/blogs_details.js"></script>
   <script src="../../../js/module.js"></script>
-  <script src="../../../js/directives/blogDirectives.js"></script>
+  <script src="../../../js/blogs/directives/blogDirectives.js"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-  <script src="../../../js/jQuery/blogs/index.js"></script>
+  <script src="../../../js/blogs/jQuery/index.js"></script>
 
   <!-- CSS links -->
   <!-- bootstrap -->
@@ -44,10 +44,9 @@
 
   <!-- stylesheets -->
 
-  <link href="../../../css/footer.css" rel="stylesheet">
-  <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">
+  <link href="../../../css/blogs/blogs_content.css" rel="stylesheet">  
   <link href="../../../css/blogs/menu.css" rel="stylesheet">
-  <link href="../../../css/base.css" rel="stylesheet">
+  <link href="../../../css/footer.css" rel="stylesheet">
 
 
   <title>Code-knayam Blogs</title>
@@ -66,6 +65,7 @@
 </head>
 
 <body ng-app="myBlogs">
+
   <div id="fb-root"></div>
   <script>
     (function (d, s, id) {
@@ -77,87 +77,106 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
+  <!-- Menu -->
   <div blog-menu-directive></div>
 
-  <div class="col-md-3">
-    <div blog-secondary-menu-directive> </div>
+  <!-- Jumbotron -->
+  <div class="jumbotron" style="background: url('../../../images/blog_1_1.png') no-repeat center center ; background-size: 150%">
+    <h3>Adding Extra Space on Dock in Mac</h3>
   </div>
 
-  <div class="col-md-9" style="padding: 0">
-    <div class="jumbotron" style="background: url('../../../images/blog_1_1.png') no-repeat center center ; background-size: cover">
-      <h3>Adding Extra Space on Dock in Mac</h3>
+  <div class="row" style="background: #eee;">
+
+    <!-- Empty Section -->
+    <div class="col-md-1"></div>
+
+    <!-- Section -->
+    <div class="col-md-8">
+      <div class="section">
+
+        <div class="row">
+          <h3 class="heading">Why is it Usueful ?</h3>
+          <h4 class="text-muted">18th October, 2017</h4>
+          <p>
+            When it comes to keeping many apps on the Dock , it might get a bit clustered for the icons to be visible easily.
+            <br />Here this technique may be handy if you like to keep your things organized, just like me.
+            <br />
+            <br /> All it requires is a little bit of command writing on terminal.
+          </p>
+          <ul>
+            <li>
+              <p>
+                Open the terminal - Press
+                <kbd>command + space</kbd>
+              </p>
+            </li>
+            <li>
+              <p>
+                Type in
+                <code>terminal</code> and press
+                <kbd>return</kbd>. Terminal window would open.
+                <br />
+              </p>
+            </li>
+            <li>
+              <p>
+                Now type in the following lines.
+                <br />
+                <code>
+                            defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+                          </code>
+                <br /> Press
+                <kbd>return</kbd>.
+                <br />
+                <code>
+                            killall Dock
+                          </code>
+                <br /> Press
+                <kbd>return</kbd>.
+                <br />
+              </p>
+            </li>
+          </ul>
+          <p>
+            Voila, you would see an extra space tile just where the icons end on dock.
+          </p>
+          <img src="../../../images/blog_1_2.png" />
+          <p>
+            Now you can rearrange it just like other icons, by dragging it over to its new place.
+            <br />
+            <br /> To remove it, you just need to drag it out of the dock and it would be removed from the dock.
+          </p>
+          <p>
+            Using this way you can keep your dock organized.
+            <br /> Just like I have done. Grouping the icons of different categories into different group.
+          </p>
+          <img src="../../../images/blog_1_1.png" />
+          <blockquote class="blockquote-reverse">
+            <footer>
+              Hope you liked it and found it useful.
+              <br /> Follow to get more blogs like this.
+              <br /> Would love to hear from you people be it for suggestions , corrections or just chat.
+              <br /> Mayank Jain
+            </footer>
+          </blockquote>
+        </div>
+        <div class="row" id="facebook_plugins">
+          <div class="fb-like" data-href="http://mayankjain.me/blogs/#/addExtraSpaceOnDock" data-layout="button_count" data-action="like"
+            data-size="small" data-show-faces="true" data-share="true"></div>
+          <br />
+          <div class="fb-comments" data-href="http://www.mayankjain.me/blogs/#/addExtraSpaceOnDock" data-numposts="5"></div>
+        </div>
+
+      </div>
     </div>
 
-    <div class="section">
-
-      <div class="row">
-        <h3 class="heading">Why is it Usueful ?</h3>
-        <h4 class="text-muted">18th October, 2017</h4>
-        <p>
-          When it comes to keeping many apps on the Dock , it might get a bit clustered for the icons to be visible easily.<br
-          />Here this technique may be handy if you like to keep your things organized, just like me.<br /><br /> All it
-          requires it a little bit of command writing on terminal.
-        </p>
-        <ul>
-          <li>
-            <p>
-              Open the terminal - Press <kbd>command + space</kbd>
-            </p>
-          </li>
-          <li>
-            <p>
-              Type in <code>terminal</code> and press <kbd>return</kbd>. Terminal window would open.<br />
-            </p>
-          </li>
-          <li>
-            <p>
-              Now type in the following lines.<br />
-              <code>
-                defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
-              </code>
-              <br /> Press <kbd>return</kbd>.
-              <br />
-              <code>
-                killall Dock
-              </code>
-              <br /> Press <kbd>return</kbd>.
-              <br />
-            </p>
-          </li>
-        </ul>
-        <p>
-          Voila, you would see an extra space tile just where the icons end on dock.
-        </p>
-        <img src="../../../images/blog_1_2.png" />
-        <p>
-          Now you can rearrange it just like other icons, by dragging it over to its new place.
-          <br /><br /> To remove it, you just need to drag it out of the dock and it would be removed from the dock.
-        </p>
-        <p>
-          Using this way you can keep your dock organized.<br /> Just like I have done. Grouping the icons of different categories
-          into different group.
-        </p>
-        <img src="../../../images/blog_1_1.png" />
-        <blockquote class="blockquote-reverse">
-          <footer>
-            Hope you liked it and found it useful.
-            <br /> Follow to get more blogs like this.
-            <br /> Would love to hear from you people be it for suggestions , corrections or just chat.
-            <br /> Mayank Jain
-          </footer>
-        </blockquote>
-      </div>
-      <div class="row" id="facebook_plugins">
-        <div class="fb-like" data-href="http://mayankjain.me/blogs/#/addExtraSpaceOnDock" data-layout="button_count" data-action="like"
-          data-size="small" data-show-faces="true" data-share="true"></div>
-        <br />
-        <div class="fb-comments" data-href="http://www.mayankjain.me/blogs/#/addExtraSpaceOnDock" data-numposts="5"></div>
-      </div>
-
-    </div>
-
-    <div blog-footer-directive></div>
+    <!-- Empty Section -->
+    <div class="col-md-3"></div>
   </div>
+
+  <!-- Footer -->
+  <div blog-footer-directive></div>
+
 
 
 </body>
