@@ -35,6 +35,10 @@
       <loc>http://mayankjain.me/blogs/october/hidingFilesInMac/</loc>
       <priority>1.00</priority>
    </url>
-
+    <!--Parallax Effect-->
+   <url>
+      <loc>http://mayankjain.me/blogs/october/parallaxEffect/</loc>
+      <priority>1.00</priority>
+   </url>
    <!--Blogs End-->
 </urlset>
