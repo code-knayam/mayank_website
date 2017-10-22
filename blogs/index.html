@@ -11,6 +11,16 @@
   <meta name="revisit-after" content="2 days">
   <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108452959-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108452959-1');
+  </script>
+
   <!-- JS links -->
   <!-- angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -61,13 +71,13 @@
 
   <div id="fb-root"></div>
   <script>
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
   </script>
 
   <!-- Menu -->
@@ -110,7 +120,8 @@
 
         <div class="col-md-6">
           <div class="sub-jumbotron-left">
-            <h2>RECENT<br>BLOGS</h2>
+            <h2>RECENT
+              <br>BLOGS</h2>
           </div>
         </div>
 
@@ -120,7 +131,7 @@
             <a ng-href="{{slide.blog_path}}" class="link">
               <span>Read More Here</span>
             </a>
-          </div>          
+          </div>
         </div>
 
       </div>
@@ -147,15 +158,13 @@
                 </h4>
                 <p>{{blog.blog_desc}}</p>
                 <span>
-                  <i class="fa fa-calendar"></i> 
-                  &nbsp;
-                  {{blog.blog_date}}
-                </span> 
+                  <i class="fa fa-calendar"></i>
+                  &nbsp; {{blog.blog_date}}
+                </span>
                 <br>
                 <span>
-                  <i class="fa fa-user"></i>  
-                  &nbsp;
-                  {{blog.author}} 
+                  <i class="fa fa-user"></i>
+                  &nbsp; {{blog.author}}
                 </span>
               </a>
             </div>
