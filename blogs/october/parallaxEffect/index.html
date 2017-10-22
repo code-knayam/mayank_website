@@ -11,6 +11,16 @@
     <meta name="revisit-after" content="2 days">
     <meta name="google-site-verification" content="BjzK_RgUvMan84Vl03qVO8wzHMx8xH_q7F6RTKL7J0o" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108452959-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108452959-1');
+    </script>
+
     <!-- FB META TAGS-->
     <meta property="og:url" content="http://mayankjain.me/blogs/october/parallaxEffect/" />
     <meta property="og:type" content="article" />
@@ -67,13 +77,13 @@
 
     <div id="fb-root"></div>
     <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+          (function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+              fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <!-- Menu -->
@@ -97,10 +107,9 @@
                     <h4 class="text-muted">21st October, 2017</h4>
                     <p>
                         When developing webpage j-query can be of great help in enhancing the look and feel of your webpage.
-                        <br>
-                        Like, if you see above the background scrolls at a different speed than the other text. This is <b>Parallax Effect.</b>
-                        <br>
-                        Now, to achieve this you need a few lines of J-Query code.
+                        <br> Like, if you see above the background scrolls at a different speed than the other text. This is
+                        <b>Parallax Effect.</b>
+                        <br> Now, to achieve this you need a few lines of J-Query code.
                     </p>
                     <ul>
                         <li>
@@ -113,12 +122,9 @@
                                     <div class="linenums">
                                         <p>
                                             &lt;div class="jumbotron"&gt;
-                                        </p>           
+                                        </p>
                                         <p>
-                                            &nbsp;&nbsp;
-                                            &lt;h3&gt;
-                                                Some heading
-                                            &lt;/h3&gt;
+                                            &nbsp;&nbsp; &lt;h3&gt; Some heading &lt;/h3&gt;
                                         </p>
                                         <p>
                                             &lt;/div&gt;
@@ -136,19 +142,16 @@
                                     </div>
                                     <div class="linenums">
                                         <p>
-                                            .jumbotron {                                                
-                                        </p>           
-                                        <p>
-                                            &nbsp;&nbsp;
-                                            height: 600px;
+                                            .jumbotron {
                                         </p>
                                         <p>
-                                            &nbsp;&nbsp;
-                                            background: url('jumboImage.jpg') center center no-repeat;
+                                            &nbsp;&nbsp; height: 600px;
                                         </p>
                                         <p>
-                                            &nbsp;&nbsp;
-                                            text-align: center;
+                                            &nbsp;&nbsp; background: url('jumboImage.jpg') center center no-repeat;
+                                        </p>
+                                        <p>
+                                            &nbsp;&nbsp; text-align: center;
                                         </p>
                                         <p>
                                             }
@@ -159,19 +162,21 @@
                         </li>
                         <li>
                             <p>
-                                Time for some JS magic - 
-                                What we need to do is basically everytime user scrolls the page, we need to call a helper funciton to animate the background.
-                                We can do this by binding the helper funciton to the scroll event on window.
+                                Time for some JS magic - What we need to do is basically everytime user scrolls the page, we need to call a helper funciton
+                                to animate the background. We can do this by binding the helper funciton to the scroll event
+                                on window.
                                 <br>
-                                <kbd>$(window).bind('scroll', animateJumbotron);</kbd>  
-                                <br><br>
-                                After this, we need to change the background position depending on the amount of page scrolled by the user. We keep track of this by using
+                                <kbd>$(window).bind('scroll', animateJumbotron);</kbd>
                                 <br>
-                                <kbd>var pos = $(window).scrollTop();</kbd>                        
-                                <br><br>
-                                Then we just need to get a new position of background depending on the amount of page scroll done by user and change the CSS property for the element with the new value.
-                                <br><br>
-                                To make things more clear, the code would look something like this - 
+                                <br> After this, we need to change the background position depending on the amount of page scrolled
+                                by the user. We keep track of this by using
+                                <br>
+                                <kbd>var pos = $(window).scrollTop();</kbd>
+                                <br>
+                                <br> Then we just need to get a new position of background depending on the amount of page scroll
+                                done by user and change the CSS property for the element with the new value.
+                                <br>
+                                <br> To make things more clear, the code would look something like this -
                             </p>
 
                             <div class="code-snippet">
@@ -180,55 +185,47 @@
                                 </div>
                                 <div class="linenums">
                                     <p>
-                                        $(document).ready(function () {         
-                                    </p>           
-                                    <p>
-                                        &nbsp;&nbsp;
-                                        $(window).bind('scroll', animateMenu);
+                                        $(document).ready(function () {
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;
-                                        function animateMenu() {
+                                        &nbsp;&nbsp; $(window).bind('scroll', animateMenu);
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        var pos = $(window).scrollTop();
+                                        &nbsp;&nbsp; function animateMenu() {
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        var velocity = 0.05;
+                                        &nbsp;&nbsp;&nbsp;&nbsp; var pos = $(window).scrollTop();
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        $('.jumbotron').each(function () {
-                                    </p>                                        
-                                    <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        var backHeight = 50 + pos * velocity;
+                                        &nbsp;&nbsp;&nbsp;&nbsp; var velocity = 0.05;
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        $(this).css('backgroundPosition', '50% ' + backHeight + '%');
+                                        &nbsp;&nbsp;&nbsp;&nbsp; $('.jumbotron').each(function () {
                                     </p>
                                     <p>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; var backHeight = 50 + pos * velocity;
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(this).css('backgroundPosition', '50% ' + backHeight + '%');
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; });
+                                    </p>
+                                    <p>
+                                        &nbsp;&nbsp; }
+                                    </p>
+                                    <p>
                                         });
                                     </p>
-                                    <p>
-                                        &nbsp;&nbsp;
-                                        }
-                                    </p>
-                                    <p>                                            
-                                        });
-                                    </p>
-                                
+
                                 </div>
                             </div>
                             <p class="text-muted">
-                                <b>Tip: </b> 
-                                <i> The variable 'velocity' is used to set the speed with which the background image scrolls. Increase the velocity's value for a greater speed.</i>
-                            </p>                                                 
-                        </li>                        
+                                <b>Tip: </b>
+                                <i> The variable 'velocity' is used to set the speed with which the background image scrolls.
+                                    Increase the velocity's value for a greater speed.</i>
+                            </p>
+                        </li>
                     </ul>
                     <p>
                         Great job. You just added a great J-Query animation to your web page.
