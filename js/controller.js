@@ -68,7 +68,7 @@ app.controller('projectsController', function($scope) {
       'image_path' : 'images/parallaxGallery.png',
       'type' : 'Concept',
       'tags' : 'HTML, CSS, jQuery',
-      'link' : 'http://www.mayankjain.me/parallaxgallery',
+      'link' : 'http://www.mayankjain.me/parallaxGallery',
       'tab' : '_blank'
     },{
       'title' : 'Cubify',
