@@ -4,7 +4,7 @@
   <!-- META DATA -->
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <meta name="description" content="Profile of Mayank Jain">
+  <meta name="description" content="Hi, I am a web developer. Have a look at what all I have done and learnt in the process.">
   <meta name="keywords" content="mayank jain, simply_mayankk, mayankjain1394@gmail.com, contact mayank jain, HTML, CSS, JavaScript, VSEC, DAMS, Kanpur, freelancer, bootstrap, php, jQuery, mayank jain info, personal website, pune, india">
   <meta name="author" content="Mayank Jain">
   <meta name="robots" content="index follow">
@@ -15,7 +15,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108452959-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-108452959-1');
@@ -37,7 +40,7 @@
   <!-- Library files present offline -->
   <script src="lib/jquery.min.js"></script>
   <script src="lib/jquery-ui.min.js"></script>
-  <script src="js/index.js"></script>  
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="lib/font-awesome.min.css">
   <link rel="stylesheet" href="lib/bootstrap.min.css" />
 
@@ -61,7 +64,8 @@
       enable_page_level_ads: true
     });
   </script>
-  <title>Hello World!</title>
+
+  <title>Hello World !!!</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
@@ -72,12 +76,15 @@
   <nav class="navbar menu">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="" class="navbar-brand-image">
+        <a href="http://mayankjain.me" class="navbar-brand-image">
           <img class="img-responsive img-rounded" src="favicon.ico" alt="Mayank Jain Logo">
         </a>
-        <a href="" class="navbar-brand">Mayank Jain</a>
+        <a href="http://mayankjain.me" class="navbar-brand">Mayank Jain</a>
+        <div class="menu-toggle-btn">
+          <i class="fa fa-bars" style="color: #fff"></i>
+        </div>
       </div>
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse desktop-menu">
         <ul class="nav navbar-nav navbar-right">
           <li id="home-btn">
             <a class="btn">Home</a>
@@ -96,6 +103,27 @@
           </li>
         </ul>
       </div>
+
+      <div class="navbar-collapse mobile-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li id="home-btn">
+            <a class="btn">Home</a>
+          </li>
+          <li id="projects-btn">
+            <a class="btn">Projects</a>
+          </li>
+          <li id="lab-btn">
+            <a class="btn">Lab</a>
+          </li>
+          <li id="blogs-btn">
+            <a class="btn" href="blogs">Blogs</a>
+          </li>
+          <li id="contact-btn">
+            <a class="btn">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+
     </div>
   </nav>
 
@@ -125,65 +153,71 @@
   <div class="clear"></div>
 
   <div class="projects" id="projects" ng-controller="worksController">
+    <div class="col-md-4 side-panel-secondary hidden-dektop">
+      <div class="content">
+        <h3>My Projects</h3>
+        <p>I started as a web developer in late 2015 learning HTML, CSS and JS. Have come a long way from there. These are some
+          of the projects that I have worked upon for some clients.</p>
+      </div>
+    </div>
     <div class="col-md-8 main-panel">
 
       <div ng-repeat="work in works">
-          <div ng-if="$index % 2 == 0" class="slide">
-              <div class="col-md-6 image-container">
-                <img class="img-responsive" src="{{work.image_path}}" alt="{{work.title}}">
-              </div>
-              <div class="col-md-6">
-                <div class="content">
-                  <h3>{{work.title}}</h3>                  
-                  <span>
-                    <i class="fa fa-user"></i>
-                    &nbsp; Mayank Jain &nbsp; | &nbsp;
-                    <i class="fa fa-info"></i>
-                    &nbsp; {{work.type}} &nbsp;
-                    <!-- <span ng-repeat="tag in work.tags">{{tag}}</span> -->
-                  </span>
-                  <br>
-                  <p>{{work.info}}</p>
-                  <a  ng-href="{{work.link}}" target="{{work.tab}}" class="btn">
-                    View Here 
-                    &nbsp;
-                    <i class="fa fa-angle-right"></i>
-                  </a>                    
-                </div>          
-              </div>
+        <div ng-if="$index % 2 == 0" class="slide">ˀ
+          <div class="col-md-6 image-container">
+            <img class="img-responsive" ng-src="{{work.image_path}}" alt="{{work.title}}">
+          </div>
+          <div class="col-md-6">
+            <div class="content">
+              <h3>{{work.title}}</h3>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; Mayank Jain &nbsp; | &nbsp;
+                <i class="fa fa-info"></i>
+                &nbsp; {{work.type}} &nbsp;
+                <!-- <span ng-repeat="tag in work.tags">{{tag}}</span> -->
+              </span>
+              <br>
+              <p>{{work.info}}</p>
+              <a ng-href="{{work.link}}" target="{{work.tab}}" class="btn">
+                View Here &nbsp;
+                <i class="fa fa-angle-right"></i>
+              </a>
             </div>
-      
-            <div ng-if="$index % 2 != 0" class="slide">
-              <div class="col-md-6">
-                  <div class="content">
-                    <h3>{{work.title}}</h3>                  
-                    <span>
-                      <i class="fa fa-user"></i>
-                      &nbsp; Mayank Jain &nbsp; | &nbsp;
-                      <i class="fa fa-info"></i>
-                      &nbsp; {{work.type}} &nbsp;
-                      <!-- <span ng-repeat="tag in work.tags">{{tag}}</span> -->
-                    </span>
-                    <br>
-                    <p>{{work.info}}</p>
-                    <a  ng-href="{{work.link}}" target="{{work.tab}}" class="btn">
-                      View Here 
-                      &nbsp;
-                      <i class="fa fa-angle-right"></i>
-                    </a>                    
-                  </div>
-              </div>
-              <div class="col-md-6 image-container">
-                <img class="img-responsive" src="{{work.image_path}}" alt="{{work.title}}">
-              </div>
+          </div>
+        </div>
+
+        <div ng-if="$index % 2 != 0" class="slide">
+          <div class="col-md-6">
+            <div class="content">
+              <h3>{{work.title}}</h3>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; Mayank Jain &nbsp; | &nbsp;
+                <i class="fa fa-info"></i>
+                &nbsp; {{work.type}} &nbsp;
+                <!-- <span ng-repeat="tag in work.tags">{{tag}}</span> -->
+              </span>
+              <br>
+              <p>{{work.info}}</p>
+              <a ng-href="{{work.link}}" target="{{work.tab}}" class="btn">
+                View Here &nbsp;
+                <i class="fa fa-angle-right"></i>
+              </a>
             </div>
-      </div>          
-      
+          </div>
+          <div class="col-md-6 image-container">
+            <img class="img-responsive" ng-src="{{work.image_path}}" alt="{{work.title}}">
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="col-md-4 side-panel">
+    <div class="col-md-4 side-panel hidden-mobile">
       <div class="content">
         <h3>My Projects</h3>
-        <p>I started as a web developer in late 2015 learning HTML, CSS and JS. Have come a long way from there. These are some of the projects that I have worked upon for some clients.</p>
+        <p>I started as a web developer in late 2015 learning HTML, CSS and JS. Have come a long way from there. These are some
+          of the projects that I have worked upon for some clients.</p>
       </div>
     </div>
   </div>
@@ -205,66 +239,72 @@
   <div class="clear"></div>
 
   <div class="labs" id="lab" ng-controller="projectsController">
-    <div class="col-md-4 side-panel">
+    <div class="col-md-4 side-panel hidden-mobile">
       <div class="content">
         <h3>My Works</h3>
-        <p>Being a nerd, learning new technologies and programming languages has always been my favourite past time. These are some projects that I have worked upon in my free time.</p>
+        <p>Being a nerd, learning new technologies and programming languages has always been my favourite past time. These are
+          some projects that I have worked upon in my free time.</p>
+      </div>
+    </div>
+    <div class="col-md-4 side-panel-secondary hidden-desktop">
+      <div class="content">
+        <h3>My Works</h3>
+        <p>Being a nerd, learning new technologies and programming languages has always been my favourite past time. These are
+          some projects that I have worked upon in my free time.</p>
       </div>
     </div>
     <div class="col-md-8 main-panel">
 
       <div ng-repeat="project in projects">
-          <div ng-if="$index % 2 ==0" class="slide">
-              <div class="col-md-6 image-container">
-                <img class="img-responsive" src="{{project.image_path}}" alt="{{project.title}}">
-              </div>
-              <div class="col-md-6">
-                <div class="content">
-                  <h3>{{project.title}}</h3>                  
-                  <span>
-                    <i class="fa fa-user"></i>
-                    &nbsp; Mayank Jain &nbsp; | &nbsp;
-                    <i class="fa fa-info"></i>
-                    &nbsp; {{project.type}} &nbsp;
-                    <!-- <span ng-repeat="tag in project.tags">{{tag}}</span> -->
-                  </span>
-                  <br>
-                  <p>{{project.info}}</p>
-                  <a  ng-href="{{project.link}}" target="{{project.tab}}" class="btn">
-                    View Here 
-                    &nbsp;
-                    <i class="fa fa-angle-right"></i>
-                  </a>                    
-                </div>
-              </div>
+        <div ng-if="$index % 2 ==0" class="slide">
+          <div class="col-md-6 image-container">
+            <img class="img-responsive" ng-src="{{project.image_path}}" alt="{{project.title}}">
+          </div>
+          <div class="col-md-6">
+            <div class="content">
+              <h3>{{project.title}}</h3>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; Mayank Jain &nbsp; | &nbsp;
+                <i class="fa fa-info"></i>
+                &nbsp; {{project.type}} &nbsp;
+                <!-- <span ng-repeat="tag in project.tags">{{tag}}</span> -->
+              </span>
+              <br>
+              <p>{{project.info}}</p>
+              <a ng-href="{{project.link}}" target="{{project.tab}}" class="btn">
+                View Here &nbsp;
+                <i class="fa fa-angle-right"></i>
+              </a>
             </div>
-      
-            <div ng-if="$index % 2 !=0" class="slide">
-              <div class="col-md-6">
-                <div class="content">
-                  <h3>{{project.title}}</h3>                  
-                  <span>
-                    <i class="fa fa-user"></i>
-                    &nbsp; Mayank Jain &nbsp; | &nbsp;
-                    <i class="fa fa-info"></i>
-                    &nbsp; {{project.type}} &nbsp;
-                    <!-- <span ng-repeat="tag in project.tags">{{tag}}</span> -->
-                  </span>
-                  <br>
-                  <p>{{project.info}}</p>
-                  <a  ng-href="{{project.link}}" target="{{project.tab}}" class="btn">
-                    View Here 
-                    &nbsp;
-                    <i class="fa fa-angle-right"></i>
-                  </a>                    
-                </div>
-              </div>
-              <div class="col-md-6 image-container">
-                <img class="img-responsive" src="{{project.image_path}}" alt="{{project.title}}">
-              </div>
+          </div>
+        </div>
+
+        <div ng-if="$index % 2 !=0" class="slide">
+          <div class="col-md-6">
+            <div class="content">
+              <h3>{{project.title}}</h3>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; Mayank Jain &nbsp; | &nbsp;
+                <i class="fa fa-info"></i>
+                &nbsp; {{project.type}} &nbsp;
+                <!-- <span ng-repeat="tag in project.tags">{{tag}}</span> -->
+              </span>
+              <br>
+              <p>{{project.info}}</p>
+              <a ng-href="{{project.link}}" target="{{project.tab}}" class="btn">
+                View Here &nbsp;
+                <i class="fa fa-angle-right"></i>
+              </a>
             </div>
-      </div>      
-      
+          </div>
+          <div class="col-md-6 image-container">
+            <img class="img-responsive" ng-src="{{project.image_path}}" alt="{{project.title}}">
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -323,20 +363,20 @@
       <div class="slide" id="s2">
         <div class="container">
           <div class="row">
-              <div class="content">
-                  <h3>
-                    <i class="fa fa-quote-left"></i>
-                    {{blog_2.blog_title}}</h3>
-                  <p>{{blog_2.blog_desc}}</p>
-                  <span>
-                    <i class="fa fa-user"></i>
-                    &nbsp; {{blog_2.author}} &nbsp; | &nbsp;
-                    <i class="fa fa-calendar"></i>
-                    &nbsp; {{blog_2.blog_date}} &nbsp;
-                  </span>
-                  <br>
-                  <a ng-href="{{blog_2.blog_path}}" class="btn btn-slide">Read More Here</a>
-                </div>
+            <div class="content">
+              <h3>
+                <i class="fa fa-quote-left"></i>
+                {{blog_2.blog_title}}</h3>
+              <p>{{blog_2.blog_desc}}</p>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; {{blog_2.author}} &nbsp; | &nbsp;
+                <i class="fa fa-calendar"></i>
+                &nbsp; {{blog_2.blog_date}} &nbsp;
+              </span>
+              <br>
+              <a ng-href="{{blog_2.blog_path}}" class="btn btn-slide">Read More Here</a>
+            </div>
           </div>
         </div>
       </div>
@@ -344,20 +384,20 @@
       <div class="slide" id="s3">
         <div class="container">
           <div class="row">
-              <div class="content">
-                  <h3>
-                    <i class="fa fa-quote-left"></i>
-                    {{blog_3.blog_title}}</h3>
-                  <p>{{blog_3.blog_desc}}</p>
-                  <span>
-                    <i class="fa fa-user"></i>
-                    &nbsp; {{blog_3.author}} &nbsp; | &nbsp;
-                    <i class="fa fa-calendar"></i>
-                    &nbsp; {{blog_3.blog_date}} &nbsp;
-                  </span>
-                  <br>
-                  <a ng-href="{{blog_3.blog_path}}" class="btn btn-slide">Read More Here</a>
-                </div>
+            <div class="content">
+              <h3>
+                <i class="fa fa-quote-left"></i>
+                {{blog_3.blog_title}}</h3>
+              <p>{{blog_3.blog_desc}}</p>
+              <span>
+                <i class="fa fa-user"></i>
+                &nbsp; {{blog_3.author}} &nbsp; | &nbsp;
+                <i class="fa fa-calendar"></i>
+                &nbsp; {{blog_3.blog_date}} &nbsp;
+              </span>
+              <br>
+              <a ng-href="{{blog_3.blog_path}}" class="btn btn-slide">Read More Here</a>
+            </div>
           </div>
         </div>
       </div>
@@ -430,18 +470,16 @@
             <h3>Hey Buddy !!!</h3>
             <p>
               Thanks for going through my portfolio.
-              <br>
-              I have listed my skills and all the things that I have worked upon.
-              <br>
-              I am a passisonate web developer, always ready to learn something new and exciting. New challanges always excite me and make me motivated.
-              <br>
-              What I believe is <span>If you are not going forward, then you are going backward.</span>.
-              <br>
-              So, following this motto I make sure that I am always learning and improving.
-              <br>
-              If you feel like we should connect, just drop me an email saying <a target="_blank" href="mailto:mayankjain1394@gmail.com">Hi (  <i class="fa fa-envelope"></i> )</a>. And I will reply back for sure.
-              <br>
-              See you soon.
+              <br> I have listed my skills and all the things that I have worked upon.
+              <br> I am a passisonate web developer, always ready to learn something new and exciting. New challanges always
+              excite me and make me motivated.
+              <br> What I believe is
+              <span>If you are not going forward, then you are going backward.</span>.
+              <br> So, following this motto I make sure that I am always learning and improving.
+              <br> If you feel like we should connect, just drop me an email saying
+              <a target="_blank" href="mailto:mayankjain1394@gmail.com">Hi (
+                <i class="fa fa-envelope"></i> )</a>. And I will reply back for sure.
+              <br> See you soon.
             </p>
           </div>
         </div>

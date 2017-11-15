@@ -18,17 +18,23 @@ $(document).ready(function () {
         'box-shadow': '0px 0px 10px #333'
       });
       $('.menu .navbar-brand').fadeIn(200);
-      $('.menu .navbar-brand, .menu li a').css({
+      $('.menu .navbar-brand, .menu li a, .menu-toggle-btn i').css({
         'color': 'rgba(1, 1, 1, 0.9)'
-      });
+      });  
+      $('.mobile-menu').css({
+        'background' : '#eee'
+      });    
     } else {
       $('.menu').css({
         'background': 'transparent',
         'box-shadow': 'none'
       });
       $('.menu .navbar-brand').fadeOut(200);
-      $('.menu .navbar-brand, .menu li a').css({
+      $('.menu .navbar-brand, .menu li a, .menu-toggle-btn i').css({
         'color': 'rgba(226, 224, 226, 1)'
+      });
+      $('.mobile-menu').css({
+        'background' : 'rgba(1, 1, 1, 0.9)'
       });
 
     }
@@ -111,6 +117,19 @@ $(document).ready(function () {
     var id = $(this).attr('id');
     var sectionID = id.substring(0, id.indexOf('-'));
     scrollPage('#' + sectionID);
+    $('.mobile-menu').fadeOut(500);
+    $('.menu-toggle-btn i').removeClass('fa-times').addClass('fa-bars');
+  });
+
+  $('.menu-toggle-btn').click( function(){
+    var element = $('.menu-toggle-btn i');
+    if ( element.hasClass('fa-bars') ) {
+      $('.mobile-menu').fadeIn(500);
+      element.removeClass('fa-bars').addClass('fa-times');
+    } else {
+      $('.mobile-menu').fadeOut(500);
+      element.removeClass('fa-times').addClass('fa-bars');
+    }
   });
 
   // Jumbotron Click Listeners
