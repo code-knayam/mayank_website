@@ -167,21 +167,22 @@ $(document).ready(function () {
       htmlIndex++;
     } else if (html.length == nextWord.length && !completed) {
       completed = true;
-      html = html.substring(0, html.length - 1);
-      sleep(200);
+      window.setTimeout(
+        () => {
+          html = html.substring(0, html.length - 1);
+        }, 300);
     } else if (html.length != nextWord.length && completed) {
       html = html.substring(0, html.length - 1);
     }    
-    $('#input').text(html);     
-    
+    $('#input').text(html);         
     window.setTimeout(animateSkills, 100);
   }
 
-  function sleep(miliseconds) {
-    var currentTime = new Date().getTime();
-    while (currentTime + miliseconds >= new Date().getTime()) {
-    }
-  }  
+  // function sleep(miliseconds) {
+  //   var currentTime = new Date().getTime();
+  //   while (currentTime + miliseconds >= new Date().getTime()) {
+  //   }
+  // }  
 
   $('.blogs .slides .slide').first().addClass('active-slide');
   $('.blogs .slides .slide').click(function(){    
