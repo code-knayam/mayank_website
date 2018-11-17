@@ -52,7 +52,7 @@ $(document).ready(function () {
         'right': '0',
         'top': '0'
       });
-    } else if (scroll > (jumboHeight - menuHeight) && scroll < (jumboHeight + projectsHeight / 1.5 - menuHeight)) {
+    } else if (scroll > (jumboHeight - menuHeight) && scroll < (jumboHeight + projectsHeight / 1.18 - menuHeight)) {
       $('.projects .side-panel .content').css({
         'position': 'fixed',
         'width': projectsWidth,
@@ -61,8 +61,8 @@ $(document).ready(function () {
         'top': menuHeight,
         'z-index': '1'
       });
-    } else if (scroll > (jumboHeight + projectsHeight / 1.5 - menuHeight)) {
-      var top = menuHeight - scroll + (jumboHeight + projectsHeight / 1.5 - menuHeight);
+    } else if (scroll > (jumboHeight + projectsHeight / 1.18 - menuHeight)) {
+      var top = menuHeight - scroll + (jumboHeight + projectsHeight / 1.18 - menuHeight);
       $('.projects .side-panel .content').css({
         'position': 'fixed',
         'width': projectsWidth,
