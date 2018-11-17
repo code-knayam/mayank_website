@@ -144,7 +144,7 @@ $(document).ready(function () {
     } , 500 );
   }
 
-  var keywords = ['Vanilla Script', 'Angular JS', 'Angular 2 & 4', 'GIT', 'HTML, CSS, Bootstrap', 'J-Query', 'Python', 'Java', ''];
+  var keywords = ['Javascript', 'Angular JS', 'Angular 6', 'Node JS', 'GIT', 'HTML, CSS, Bootstrap', 'J-Query', 'Python', 'Java', ''];
   var index = 0, htmlIndex = 0;
   var nextWord = "", html = "";
   var completed = false;

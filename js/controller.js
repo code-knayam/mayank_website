@@ -1,6 +1,33 @@
 app.controller('worksController', function($scope) {
 
-  $scope.works = [
+	$scope.works = [
+	{
+      'title' : 'Angular ToDo',
+      'image_path' : 'images/angularTodo.png',
+      'type' : 'Angular App',
+      'tags' : 'Angular 6, Firebase, Node JS',
+      'link' : "https://angulartodo-af85b.firebaseapp.com/",
+      'tab' : '_blank',
+      'info' : "Angular ToDo is a ToDo app made with Angular 6. Users can login with their Google accounts and sync up the tasks. It uses Google Firebase platform for hosting / database and cloud functions written in Node JS."
+	},
+	{
+      'title' : 'Github Search',
+      'image_path' : 'images/githubSearch.png',
+      'type' : 'Web App',
+      'tags' : 'Angular JS, Github REST API, Firebase, Node JS',
+      'link' : "https://github-search-53fc3.firebaseapp.com/",
+      'tab' : '_blank',
+      'info' : "Github Search is a web app made with Angular JS. Users can search for various Github users by providing username or keywords. It makes use of Github REST APIs to search for users and then display different info about users in form of charts and graphs. Makes use of Google Firebase platform to host the app and to manage the backend cloud functions written in Node JS."
+	},
+	{
+      'title' : 'Code-Knayam',
+      'image_path' : 'images/codeKnayam.png',
+      'type' : 'Youtube Channel',
+      'tags' : 'Angular JS, Angular 6, Git',
+      'link' : "https://www.youtube.com/channel/UCmQvLNj-KEf8OBqq1Sijsgw/",
+      'tab' : '_blank',
+      'info' : "Code-Knayam is a Youtube channel which aims at spreading the knowledge that I have in the field of UI with everyone in form of video tutorials."
+    },
     {
       'title' : 'Bhavna - NGO',
       'image_path' : 'images/ngo_bhavna.png',
